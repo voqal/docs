@@ -1,62 +1,56 @@
 ---
 title: 'Quickstart'
-description: 'Start building awesome documentation in under 5 minutes'
+description: 'Getting started with vocal coding in under 5 minutes'
 ---
 
-## Setup your development
+To use Voqal, you will need two keys:
+ -  A [Picovoice](https://picovoice.ai) access key  (for offline voice processing)
+ - and a [OpenAI](https://openai.com) API key (for transcribing and TTS)
 
-Learn how to update your docs locally and and deploy them to the public.
+Picovoice offers a free plan which you can use with Voqal.
+OpenAI offers $5 in free credit to new signups.
+Afterwards you will need to pay OpenAI directly for any charges incurred while using Voqal.
 
-### Edit and preview
+## Acquire Picovoice AccessKey
 
-<AccordionGroup>
-  <Accordion icon="github" title="Clone your docs locally">
-    During the onboarding process, we created a repository on your Github with
-    your docs content. You can find this repository on our
-    [dashboard](https://dashboard.mintlify.com). To clone the repository
-    locally, follow these
-    [instructions](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
-    in your terminal.
-  </Accordion>
-  <Accordion icon="rectangle-terminal" title="Preview changes">
-    Previewing helps you make sure your changes look as intended. We built a
-    command line interface to render these changes locally. 1. Install the
-    [Mintlify CLI](https://www.npmjs.com/package/mintlify) to preview the
-    documentation changes locally with this command: ``` npm i -g mintlify ```
-    2. Run the following command at the root of your documentation (where
-    `mint.json` is): ``` mintlify dev ```
-  </Accordion>
-</AccordionGroup>
+- Go to [Picovoice](https://picovoice.ai)
+- Sign up for a free account or login to your existing account
+- Go to [Picovoice console](https://console.picovoice.ai)
+- Copy AccessKey
 
-### Deploy your changes
+## Acquire OpenAI API key
 
-<AccordionGroup>
+- Go to [OpenAI](https://openai.com)
+- Sign up for a free account or login to your existing account
+- Go to [API keys](https://platform.openai.com/api-keys)
+- Click `Create new secret key`
+- Copy secret key
 
-<Accordion icon="message-bot" title="Install our Github app">
-  Our Github app automatically deploys your changes to your docs site, so you
-  don't need to manage deployments yourself. You can find the link to install on
-  your [dashboard](https://dashboard.mintlify.com). Once the bot has been
-  successfully installed, there should be a check mark next to the commit hash
-  of the repo.
-</Accordion>
-<Accordion icon="rocket" title="Push your changes">
-  [Commit and push your changes to
-  Git](https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository#about-git-push)
-  for your changes to update in your docs site. If you push and don't see that
-  the Github app successfully deployed your changes, you can also manually
-  update your docs through our [dashboard](https://dashboard.mintlify.com).
-</Accordion>
+## Install plugin
 
-</AccordionGroup>
+1. Navigate to your JetBrains IDE.
+1. Press ++ctrl+alt+s++ to open the `Settings` dialog and then go to `Plugins`.
+1. Open the `Marketplace` tab.
+1. Search for `Voqal`.
+1. Press `Install`.
+1. Click `OK` in the `Settings` dialog.
 
-## Update your docs
+## Configure plugin
 
-Add content directly in your files with MDX syntax and React components. You can use any of our components, or even build your own.
+<img src="/images/configuration.png" />
+
+Voqal can be configured in the IDE settings under:
+ - Settings -> Tools -> Voqal
+
+## Speak up
+
+That's all there is to it. Say Voqal (pronounced vocal) and say hello to your new forever programming assistant.
+Voqal is designed to be fully customizable so be sure to let Voqal know how you prefer it to respond to you.
 
 <CardGroup>
 
-<Card title="Style Your Docs" icon="paintbrush" href="/settings/global">
-  Add flair to your docs with personalized branding.
+<Card title="Demonstrations" icon="video" href="/settings/global">
+  A collection of vocalizations demonstrating Voqal's abilities.
 </Card>
 
 <Card
