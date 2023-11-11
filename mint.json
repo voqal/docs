@@ -59,5 +59,10 @@
     "twitch": "https://twitch.tv/voqaldev",
     "twitter": "https://twitter.com/voqaldev",
     "discord": "https://discord.gg/KXRMWZcB"
+  },
+  "analytics": {
+    "ga4": {
+      "measurementId": "G-4MWF5BX26Z"
+    }
   }
 }
