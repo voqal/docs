@@ -47,6 +47,12 @@
       ]
     },
     {
+      "group": "Configuration",
+      "pages": [
+        "configuration/closed_captioning"
+      ]
+    },
+    {
       "group": "Voqal Abilities",
       "pages": [
         "voqals/answer_question",
