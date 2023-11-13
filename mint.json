@@ -23,6 +23,11 @@
   ],
   "anchors": [
     {
+      "name": "Website",
+      "icon": "globe",
+      "url": "https://voqal.dev"
+    },
+    {
       "name": "GitHub",
       "icon": "github",
       "url": "https://github.com/voqal/voqal"
