@@ -52,9 +52,11 @@
       ]
     },
     {
-      "group": "Configuration",
+      "group": "Voqal Configuration",
       "pages": [
-        "configuration/closed_captioning"
+        "configuration/closed_captioning",
+        "configuration/speech_to_text",
+        "configuration/text_to_speech"
       ]
     },
     {
