@@ -63,8 +63,7 @@
       "group": "Voqal Abilities",
       "pages": [
         "voqals/answer_question",
-        "voqals/write_code",
-        "voqals/remember"
+        "voqals/write_code"
       ]
     }
   ],
