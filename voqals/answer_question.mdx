@@ -1,37 +1,17 @@
 ---
 title: 'Answer Question'
-description: 'Display inline code and code blocks'
+description: 'Get answers to your questions about code'
 icon: 'question'
 ---
 
 ## Basic
 
-### Inline Code
-
-To denote a `word` or `phrase` as code, enclose it in backticks (`).
-
-```
-To denote a `word` or `phrase` as code, enclose it in backticks (`).
-```
-
-### Code Block
-
-Use [fenced code blocks](https://www.markdownguide.org/extended-syntax/#fenced-code-blocks) by enclosing code in three backticks and follow the leading ticks with the programming language of your snippet to get syntax highlighting. Optionally, you can also write the name of your code after the programming language.
-
-```java HelloWorld.java
-class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
-    }
-}
-```
-
-````md
-```java HelloWorld.java
-class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
-    }
-}
-```
-````
+The `Answer Question` ability of Voqal transforms your IDE into an interactive knowledge base.
+Whether you're curious about the functionality of a standard library, need clarification on syntax,
+or require a detailed explanation of the code you're reviewing,
+Voqal leverages the context of the opened file to provide accurate responses.
+By selecting specific text or code segments before invoking this feature,
+you signal Voqal to concentrate its response on that snippet.
+This is particularly effective for understanding the purpose and potential output of functions,
+deciphering error messages, or gaining insights on optimization.
+It's a handy tool for learning and ensuring best practices are followed without breaking your development workflow.
