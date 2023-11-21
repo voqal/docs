@@ -17,16 +17,15 @@
   },
   "topbarLinks": [
     {
+      "name": "Website",
+      "url": "https://voqal.dev"
+    },
+    {
       "name": "Report an issue",
       "url": "https://github.com/voqal/voqal/issues"
     }
   ],
   "anchors": [
-    {
-      "name": "Website",
-      "icon": "globe",
-      "url": "https://voqal.dev"
-    },
     {
       "name": "GitHub",
       "icon": "github",
