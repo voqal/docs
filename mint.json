@@ -67,6 +67,12 @@
         "voqals/open_file",
         "voqals/run_program"
       ]
+    },
+    {
+      "group": "Development",
+      "pages": [
+        "development/changelog"
+      ]
     }
   ],
   "footerSocials": {
