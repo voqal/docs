@@ -32,6 +32,11 @@
       "url": "https://github.com/voqal/voqal"
     },
     {
+      "name": "YouTube",
+      "icon": "youtube",
+      "url": "https://www.youtube.com/channel/UCHalNmlP60aYn-qffa0P5eA"
+    },
+    {
       "name": "Twitch",
       "icon": "twitch",
       "url": "https://twitch.tv/voqaldev"
