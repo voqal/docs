@@ -37,11 +37,6 @@
       "url": "https://www.youtube.com/channel/UCHalNmlP60aYn-qffa0P5eA"
     },
     {
-      "name": "Twitch",
-      "icon": "twitch",
-      "url": "https://twitch.tv/voqaldev"
-    },
-    {
       "name": "Discord",
       "icon": "discord",
       "url": "https://discord.gg/KXRMWZcB"
@@ -58,8 +53,9 @@
     {
       "group": "Voqal Configuration",
       "pages": [
-        "configuration/closed_captioning",
+        "configuration/wake_detection",
         "configuration/speech_to_text",
+        "configuration/language_model",
         "configuration/text_to_speech"
       ]
     },
