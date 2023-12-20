@@ -62,11 +62,11 @@
     {
       "group": "Voqal Abilities",
       "pages": [
-        "voqals/write_code",
-        "voqals/answer_question",
-        "voqals/add_breakpoints",
-        "voqals/open_file",
-        "voqals/run_program"
+        "abilities/programming",
+        "abilities/navigation",
+        "abilities/program_execution",
+        "abilities/display",
+        "abilities/qa"
       ]
     },
     {
