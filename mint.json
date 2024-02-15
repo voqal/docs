@@ -56,7 +56,8 @@
         "configuration/wake_detection",
         "configuration/speech_to_text",
         "configuration/language_model",
-        "configuration/text_to_speech"
+        "configuration/text_to_speech",
+        "configuration/ide_tuning"
       ]
     },
     {
