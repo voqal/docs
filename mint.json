@@ -42,6 +42,10 @@
       "url": "https://discord.gg/KgTkR5Rffz"
     }
   ],
+  "feedback": {
+    "suggestEdit": true,
+    "raiseIssue": true
+  },
   "navigation": [
     {
       "group": "Get Started",
