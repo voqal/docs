@@ -73,6 +73,7 @@
     {
       "group": "Development",
       "pages": [
+        "development/early-access-program",
         "development/changelog"
       ]
     }
