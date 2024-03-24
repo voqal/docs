@@ -105,6 +105,7 @@
     {
       "group": "Speech-to-Text",
       "pages": [
+        "integrations/stt/deepgram",
         "integrations/stt/openai",
         "integrations/stt/picovoice"
       ]
@@ -126,6 +127,7 @@
     {
       "group": "Intent Detection",
       "pages": [
+        "integrations/intent/deepgram",
         "integrations/intent/picovoice"
       ]
     },
