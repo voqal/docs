@@ -145,6 +145,7 @@
       "group": "Text-to-Speech",
       "pages": [
         "integrations/tts/openai",
+        "integrations/tts/deepgram",
         "integrations/tts/picovoice"
       ]
     },
