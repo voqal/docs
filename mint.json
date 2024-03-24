@@ -46,12 +46,27 @@
     "suggestEdit": true,
     "raiseIssue": true
   },
+  "tabs": [
+    {
+      "name": "Integrations",
+      "url": "integrations"
+    },
+    {
+      "name": "Prompting",
+      "url": "prompting"
+    },
+    {
+      "name": "Roadmap",
+      "url": "roadmap"
+    }
+  ],
   "navigation": [
     {
       "group": "Get Started",
       "pages": [
         "introduction",
-        "quickstart"
+        "quickstart",
+        "privacy"
       ]
     },
     {
@@ -79,6 +94,86 @@
       "pages": [
         "development/early-access-program",
         "development/changelog"
+      ]
+    },
+    {
+      "group": "Voqal Integrations",
+      "pages": [
+        "integrations/overview"
+      ]
+    },
+    {
+      "group": "STT Providers",
+      "pages": [
+        "integrations/stt/openai",
+        "integrations/stt/picovoice"
+      ]
+    },
+    {
+      "group": "Wake Word Providers",
+      "pages": [
+        "integrations/wake/deepgram",
+        "integrations/wake/picovoice"
+      ]
+    },
+    {
+      "group": "Voice Detection Providers",
+      "pages": [
+        "integrations/vad/picovoice",
+        "integrations/vad/voqal"
+      ]
+    },
+    {
+      "group": "Intent Detection Providers",
+      "pages": [
+        "integrations/intent/picovoice"
+      ]
+    },
+    {
+      "group": "LLM Providers",
+      "pages": [
+        "integrations/llm/huggingface",
+        "integrations/llm/mistralai",
+        "integrations/llm/ollama",
+        "integrations/llm/openai",
+        "integrations/llm/togetherai"
+      ]
+    },
+    {
+      "group": "TTS Providers",
+      "pages": [
+        "integrations/tts/openai",
+        "integrations/tts/picovoice"
+      ]
+    },
+    {
+      "group": "Voqal Prompting",
+      "pages": [
+        "prompting/overview"
+      ]
+    },
+    {
+      "group": "Code Mode",
+      "pages": [
+        "prompting/overview"
+      ]
+    },
+    {
+      "group": "Command Mode",
+      "pages": [
+        "prompting/overview"
+      ]
+    },
+    {
+      "group": "Dictate Mode",
+      "pages": [
+        "prompting/overview"
+      ]
+    },
+    {
+      "group": "Voqal Roadmap",
+      "pages": [
+        "roadmap/overview"
       ]
     }
   ],
