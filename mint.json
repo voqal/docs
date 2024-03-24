@@ -103,34 +103,34 @@
       ]
     },
     {
-      "group": "STT Providers",
+      "group": "Speech-to-Text",
       "pages": [
         "integrations/stt/openai",
         "integrations/stt/picovoice"
       ]
     },
     {
-      "group": "Wake Word Providers",
+      "group": "Wake Word",
       "pages": [
         "integrations/wake/deepgram",
         "integrations/wake/picovoice"
       ]
     },
     {
-      "group": "Voice Detection Providers",
+      "group": "Voice Detection",
       "pages": [
         "integrations/vad/picovoice",
         "integrations/vad/voqal"
       ]
     },
     {
-      "group": "Intent Detection Providers",
+      "group": "Intent Detection",
       "pages": [
         "integrations/intent/picovoice"
       ]
     },
     {
-      "group": "LLM Providers",
+      "group": "Large Language Model",
       "pages": [
         "integrations/llm/huggingface",
         "integrations/llm/mistralai",
@@ -140,10 +140,16 @@
       ]
     },
     {
-      "group": "TTS Providers",
+      "group": "Text-to-Speech",
       "pages": [
         "integrations/tts/openai",
         "integrations/tts/picovoice"
+      ]
+    },
+    {
+      "group": "Observability",
+      "pages": [
+        "integrations/observability/helicone"
       ]
     },
     {
