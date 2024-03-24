@@ -161,19 +161,19 @@
     {
       "group": "Code Mode",
       "pages": [
-        "prompting/overview"
+        "prompting/code/voqal"
       ]
     },
     {
       "group": "Command Mode",
       "pages": [
-        "prompting/overview"
+        "prompting/command/voqal"
       ]
     },
     {
       "group": "Dictate Mode",
       "pages": [
-        "prompting/overview"
+        "prompting/dictate/voqal"
       ]
     },
     {
