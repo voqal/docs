@@ -48,6 +48,10 @@
   },
   "tabs": [
     {
+      "name": "Tools",
+      "url": "tools"
+    },
+    {
       "name": "Integrations",
       "url": "integrations"
     },
@@ -92,8 +96,33 @@
     {
       "group": "Development",
       "pages": [
-        "development/early-access-program",
+        "development/early_access_program",
         "development/changelog"
+      ]
+    },
+    {
+      "group": "Voqal Tools",
+      "pages": [
+        "tools/overview"
+      ]
+    },
+    {
+      "group": "General",
+      "pages": [
+        "tools/general/answer_question",
+        "tools/general/custom_tool",
+        "tools/general/modify_text"
+      ]
+    },
+    {
+      "group": "IDE",
+      "pages": [
+        "tools/ide/breakpoint_management",
+        "tools/ide/code_completion",
+        "tools/ide/editor_control",
+        "tools/ide/file_navigation",
+        "tools/ide/program_execution",
+        "tools/ide/window_display"
       ]
     },
     {
