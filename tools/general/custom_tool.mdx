@@ -4,3 +4,26 @@ description: ""
 ---
 
 <Warning>This is currently under development.</Warning>
+
+## Custom Tool
+
+Uses [JSON Schema](https://json-schema.org/) to define the structure of the data that the tool expects.
+
+## Example Tool
+
+```yaml
+type: function
+function:
+  name: trigger_github_build
+  parameters:
+    type: object
+    properties:
+      branch:
+        type: string
+        description: The branch to build.
+    required:
+    - branch
+  description: Use this tool whenever the developer asks you to trigger a github build.
+    exec:
+      command: gh workflow run build.yml --repo owner/repo --ref $[[branch]]
+```
