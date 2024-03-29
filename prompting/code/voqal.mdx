@@ -29,7 +29,7 @@ If you are unsure how to handle a transcription, output the transcription as a c
 Make sure to wrap code in three ticks (```<output code here>```).
 No `// code here` comments. Just output a single line of code that most closely matches the transcription.
 
-{% if developer.viewingCode.language == "Java" %}
+{% if developer.viewingCode.language == "JAVA" %}
 
 ## Examples
 
@@ -38,22 +38,20 @@ No `// code here` comments. Just output a single line of code that most closely 
 | Input                                                            | Output                                                             |
 |------------------------------------------------------------------|--------------------------------------------------------------------|
 | `int x equals five`                                              | `int x = 5;`                                                       |
-| `for i in 100`                                                   | `for(int i = 0; i < 100; i++){`                                    |
-| `for i in 100 if my name equals bob`                             | `for(int i = 0; i < 100; i++){`                                    |
-| `4 I n 100`                                                      | `for(int i = 0; i < 100; i++){`                                    |
-| `if my name equals bob`                                          | `if(myName.equals("Bob")){`                                        |
-| `public static void main string arcs`                            | `public static void main(String[] args){`                          |
+| `for i in 100`                                                   | `for (int i = 0; i < 100; i++) {`                                  |
+| `for i in 100 if my name equals bob`                             | `for (int i = 0; i < 100; i++) {`                                  |
+| `4 I n 100`                                                      | `for (int i = 0; i < 100; i++) {`                                  |
+| `if my name equals bob`                                          | `if (myName.equals("Bob")) {`                                      |
+| `public static void main string arcs`                            | `public static void main(String[] args) {`                         |
 | `System out print Elaine hello world`                            | `System.out.println("Hello, World");`                              |
 | `import java IO star`                                            | `import java.io.*;`                                                |
-| `semi colon`                                                     | `;`                                                                |
-| `create a class called dog with properties breed, age and color` | `public class Dog {\n String breed;\n int age;\n String color;\n}` |
-| `create class puppy with constructor`                            | `public class Puppy {\n public Puppy() {\n }\n}`                   |
 | `scanner obj equals new scanner system dot in`                   | `Scanner myObj = new Scanner(System.in);`                          |
 | `blah blah blah`                                                 | `// blah blah blah`                                                |
+| `else`                                                           | `else {`                                                           |
 
 {% endif %}
 
-{% if developer.viewingCode.language == "Python" %}
+{% if developer.viewingCode.language == "PYTHON" %}
 
 ## Examples
 
@@ -68,10 +66,69 @@ No `// code here` comments. Just output a single line of code that most closely 
 | `if my name equals bob`                                          | `if myName == "Bob":`                                    |
 | `print Elaine hello world`                                       | `print("Hello, World")`                                  |
 | `import random`                                                  | `import random`                                          |
-| `semi colon`                                                     | `;`                                                      |
-| `create a class called dog with properties breed, age and color` | `class Dog:\n    def __init__(self, breed, age, color):` |
-| `create class puppy with constructor`                            | `class Puppy:\n    def __init__(self):`                  |
 | `blah blah blah`                                                 | `# blah blah blah`                                       |
+| `else`                                                           | `else:`                                                  |
+
+{% endif %}
+
+{% if developer.viewingCode.language == "RUST" %}
+
+## Examples
+
+> Some examples of the expected output for the given input.
+
+| Input                                                             | Output                                                    |
+|-------------------------------------------------------------------|-----------------------------------------------------------|
+| `let x equal five`                                                | `let x = 5;`                                              |
+| `for i in 0 to 100`                                               | `for i in 0..=100 {`                                      |
+| `for i in 0 to 100 if my name equals bob`                         | `for i in 0..=100 {`                                      |
+| `4 I in 0 to 100`                                                 | `for i in 0..=100 {`                                      |
+| `if my name equals bob`                                           | `if my_name == "Bob" {`                                   |
+| `print hello world`                                               | `println!("Hello, World");`                               |
+| `use std io`                                                      | `use std::io;`                                            |
+| `let mut input equals String new`                                 | `let mut input = String::new();`                          |
+| `blah blah blah`                                                  | `// blah blah blah`                                       |
+| `else`                                                            | `else {`                                                  |
+
+{% endif %}
+
+{% if developer.viewingCode.language == "JAVASCRIPT" %}
+
+## Examples
+
+> Some examples of the expected output for the given input.
+
+| Input                                                            | Output                                                                                                     |
+|------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
+| `let x equal five`                                               | `let x = 5;`                                                                                               |
+| `for i in 100`                                                   | `for (let i = 0; i < 100; i++) {`                                                                          |
+| `for i in 100 if my name equals bob`                             | `for (let i = 0; i < 100; i++) {`                                                                          |
+| `4 I n 100`                                                      | `for (let i = 0; i < 100; i++) {`                                                                          |
+| `if my name equals bob`                                          | `if (myName === "Bob"){`                                                                                   |
+| `console log hello world`                                        | `console.log("Hello, World");`                                                                             |
+| `import react from react`                                        | `import React from 'react';`                                                                               |
+| `blah blah blah`                                                 | `// blah blah blah`                                                                                        |
+| `else`                                                           | `else {`                                                                                                   |
+
+{% endif %}
+
+{% if developer.viewingCode.language == "KOTLIN" %}
+
+## Examples
+
+> Some examples of the expected output for the given input.
+
+| Input                                                            | Output                                                               |
+|------------------------------------------------------------------|----------------------------------------------------------------------|
+| `val x equals five`                                              | `val x = 5`                                                          |
+| `for i in 0 until 100`                                           | `for (i in 0 until 100) {`                                           |
+| `for i in 0 until 100 if my name equals bob`                     | `for (i in 0 until 100) {`                                           |
+| `4 I n 0 until 100`                                              | `for (i in 0 until 100) {`                                           |
+| `if my name equals bob`                                          | `if (myName == "Bob") {`                                             |
+| `print hello world`                                              | `println("Hello, World")`                                            |
+| `import kotlinx serialization json`                              | `import kotlinx.serialization.json.*`                                |
+| `blah blah blah`                                                 | `// blah blah blah`                                                  |
+| `else`                                                           | `else {`                                                             |
 
 {% endif %}
 
