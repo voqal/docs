@@ -1,0 +1,36 @@
+---
+title: "Run Program"
+description: ""
+---
+
+<Warning>This is currently under development.</Warning>
+
+### run_program
+
+```yaml
+type: function
+function:
+  name: run_program
+  parameters:
+    type: object
+    properties:
+      file_run_configuration:
+        type: enum
+        description: The file run configuration to run.
+        enum:
+        - Main
+        - Main
+      project_run_configuration:
+        type: project_run_configuration
+        description: The project run configuration to run.
+        enum:
+        - Application__Main
+      debug_mode:
+        type: boolean
+        description: Whether or not to run in debug mode, default is false
+        default: false
+  description: Executes/runs a particular file, file run configuration, or project
+    run configuration. Prefer file run configurations over project run configurations
+    over file names. If you only have one run configuration, consider that the 'this'
+    in 'run this'.
+```

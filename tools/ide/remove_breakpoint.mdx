@@ -1,0 +1,25 @@
+---
+title: "Remove Breakpoint"
+description: ""
+---
+
+<Warning>This is currently under development.</Warning>
+
+### remove_breakpoint
+
+```yaml
+type: function
+function:
+  name: remove_breakpoint
+  parameters:
+    type: object
+    properties:
+      line_numbers:
+        type: array
+        description: The line number(s) to remove a breakpoint from.
+        items:
+          type: string
+    required:
+    - line_numbers
+  description: Removes breakpoints from the specified line numbers.
+```

@@ -1,0 +1,44 @@
+---
+title: "Create New Class"
+description: ""
+---
+
+<Warning>This is currently under development.</Warning>
+
+### create_new_class
+
+```yaml
+type: function
+function:
+  name: create_new_class
+  parameters:
+    type: object
+    properties:
+      language:
+        type: string
+        description: The language type of the class (Java, Python, etc).
+        default: Java
+      class_type:
+        type: enum
+        description: The type of class to create.
+        enum:
+        - class
+        - interface
+        - enum
+        - object
+        - data class
+        default: class
+      class_name:
+        type: string
+        description: The name of the class being created.
+      path:
+        type: string
+        description: Path or package to place class (e.g. com.example, src/utils/,
+          etc.)
+    required:
+    - language
+    - class_name
+  description: 'Use this tool when the developer requests to create a new class. The
+    new class should be empty except for necessary structure for classes of the given
+    language. '
+```

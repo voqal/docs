@@ -103,7 +103,8 @@
     {
       "group": "Voqal Tools",
       "pages": [
-        "tools/overview"
+        "tools/overview",
+        "tools/intents"
       ]
     },
     {
@@ -115,12 +116,14 @@
     {
       "group": "IDE",
       "pages": [
-        "tools/ide/breakpoint_management",
-        "tools/ide/code_completion",
-        "tools/ide/editor_control",
-        "tools/ide/file_navigation",
-        "tools/ide/program_execution",
-        "tools/ide/window_display"
+        "tools/ide/add_breakpoint",
+        "tools/ide/create_file",
+        "tools/ide/create_new_class",
+        "tools/ide/play_program",
+        "tools/ide/remove_breakpoint",
+        "tools/ide/run_program",
+        "tools/ide/show_tab",
+        "tools/ide/stop_program"
       ]
     },
     {

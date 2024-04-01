@@ -1,23 +1,23 @@
 ---
-title: "Stop Program"
+title: "Show Tab"
 description: ""
 ---
 
 <Warning>This is currently under development.</Warning>
 
-### stop_program
+### show_tab
 
 ```yaml
 type: function
 function:
-  name: stop_program
+  name: show_tab
   parameters:
     type: object
     properties:
-      reason:
+      tab_name:
         type: string
-        description: The reason for stopping executing programs.
+        description: The name of the tab to show.
     required:
-    - reason
-  description: Stops all executing programs.
+    - tab_name
+  description: Show/focus on a specific visible tab.
 ```

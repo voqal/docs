@@ -1,0 +1,25 @@
+---
+title: "Add Breakpoint"
+description: ""
+---
+
+<Warning>This is currently under development.</Warning>
+
+### add_breakpoint
+
+```yaml
+type: function
+function:
+  name: add_breakpoint
+  parameters:
+    type: object
+    properties:
+      line_numbers:
+        type: array
+        description: The line number(s) to add a breakpoint to.
+        items:
+          type: string
+    required:
+    - line_numbers
+  description: Adds breakpoints to the specified line numbers.
+```
