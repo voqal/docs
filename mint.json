@@ -230,5 +230,9 @@
     "ga4": {
       "measurementId": "G-4MWF5BX26Z"
     }
+  },
+  "modeToggle": {
+    "default": "dark",
+    "isHidden": true
   }
 }
