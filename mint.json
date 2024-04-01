@@ -124,10 +124,10 @@
       ]
     },
     {
-      "group": "Writing",
+      "group": "Textual",
       "pages": [
-        "tools/writing/insert_text",
-        "tools/writing/modify_text"
+        "tools/textual/insert_text",
+        "tools/textual/modify_text"
       ]
     },
     {
