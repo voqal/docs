@@ -6,13 +6,12 @@ icon: sitemap
 
 <Warning>This is currently under development.</Warning>
 
-## Voqal Tools
+## Embedded Tools
 
-Voqal Tools are used to power the [Voqal Command Mode](/prompting/command/voqal). Voqal Tools are
-a set of triggerable actions that can be used autonomously by the Voqal Assistant. By using these tools individually
-or in combination, the Voqal Assistant can perform a wide range of tasks. The Voqal Assistant can be programmed
-further via the [Custom Tool](/tools/general/custom_tool), which allows you to create your own tools that can then be used autonomously
-by the Voqal Assistant.
+Voqal Tools provide the functionality offered via the [Voqal Command Mode](/prompting/command/voqal). Voqal Tools are a set of conditionally
+triggerable actions that can be used autonomously by the Voqal Assistant. By using these tools individually or in
+combination, Voqal can perform a wide variety of tasks. The Voqal Assistant can be programmed further via
+[Custom Tools](#custom-tools), allowing you to create your own tools that Voqal can then use autonomously.
 
 ### General
 
@@ -27,3 +26,31 @@ They are used to perform tasks such as navigating the codebase, running tests, a
 ### Writing
 
 These tools are used to assist in writing tasks. They can be used to generate code, write documentation, and more.
+
+## Custom Tools
+
+Uses [JSON Schema](https://json-schema.org/) to define the structure of the data that the tool expects.
+
+### Example Usage
+
+#### trigger_github_build
+
+The following is an example of a custom tool that triggers a GitHub build. It takes a branch name as input
+and triggers a GitHub build for the specified branch in the owner/repo repository.
+
+```yaml
+type: function
+function:
+  name: trigger_github_build
+  parameters:
+    type: object
+    properties:
+      branch:
+        type: string
+        description: The branch to build.
+    required:
+    - branch
+  description: Use this tool whenever the developer asks you to trigger a github build.
+    exec:
+      command: gh workflow run build.yml --repo owner/repo --ref $[[branch]]
+```

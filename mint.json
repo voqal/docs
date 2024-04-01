@@ -109,8 +109,7 @@
     {
       "group": "General",
       "pages": [
-        "tools/general/answer_question",
-        "tools/general/custom_tool"
+        "tools/general/answer_question"
       ]
     },
     {
