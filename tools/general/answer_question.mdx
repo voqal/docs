@@ -1,6 +1,36 @@
 ---
 title: "Answer Question"
-description: ""
+description: "Responds to questions asked by the developer"
+icon: question
 ---
 
 <Warning>This is currently under development.</Warning>
+
+The Answer Question tool is used by the Voqal Assistant to respond to questions asked by the developer.
+It uses the currently selected text and any open files as context to provide more accurate answers.
+
+### Example Usage
+
+- `"What does the selected code do?"`
+- `"How do Java annotations work?"`
+- `"What is the difference between a class and an interface?"`
+
+### Source Code
+
+```yaml
+type: function
+function:
+  name: answer_question
+  parameters:
+    type: object
+    properties:
+      answer:
+        type: string
+        description: The answer to TTS to the developer.
+    required:
+    - answer
+  description: 'Use this tool whenever the developer asks you a question. If the developer''s
+    prompt has a question mark in it, you should obviously use this tool. Never call
+    this tool with raw code. Remember, you are a voice assistant. Be succinct and
+    to the point. '
+```

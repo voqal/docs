@@ -163,10 +163,10 @@
     {
       "group": "Large Language Model",
       "pages": [
-        "integrations/llm/huggingface",
-        "integrations/llm/mistralai",
-        "integrations/llm/ollama",
         "integrations/llm/openai",
+        "integrations/llm/mistralai",
+        "integrations/llm/huggingface",
+        "integrations/llm/ollama",
         "integrations/llm/togetherai"
       ]
     },
