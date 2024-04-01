@@ -1,0 +1,42 @@
+---
+title: "Insert Text"
+description: ""
+icon: arrow-down-to-arc
+---
+
+<Warning>This is currently under development.</Warning>
+
+todo
+
+### Example Usage
+
+- `"todo"`
+
+### Source Code
+
+```yaml
+type: function
+function:
+  name: insert_text
+  parameters:
+    type: object
+    properties:
+      text:
+        type: string
+        description: The text to insert into the document.
+      line:
+        type: integer
+        description: The line number at which to insert the text. Lines are 0-indexed.
+          If the line number is -1, the text will be inserted at the end of the document.
+      column:
+        type: integer
+        description: The column number at which to insert the text. Columns are 0-indexed.
+          If the column number is -1, the text will be inserted at the end of the
+          line.
+    required:
+    - text
+    - line
+    - column
+  description: 'Use this tool when the developer requests an insertion of text into
+    the document. The text will be inserted at the specified line and column. '
+```

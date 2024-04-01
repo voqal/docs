@@ -1,0 +1,38 @@
+---
+title: "Modify Text"
+description: ""
+icon: arrows-turn-to-dots
+---
+
+<Warning>This is currently under development.</Warning>
+
+todo
+
+### Example Usage
+
+- `"todo"`
+
+### Source Code
+
+```yaml
+type: function
+function:
+  name: modify_text
+  parameters:
+    type: object
+    properties:
+      old_text:
+        type: string
+        description: 'The text which is being replaced. Must not be empty string.
+          The text must be present in the document to be replaced. The text must match
+          exactly one span of text in the document. '
+      new_text:
+        type: string
+        description: The text to replace the old_text with. May be empty string.
+    required:
+    - old_text
+    - new_text
+  description: Use this tool when the developer requests to modify existing text.
+    To replace non-contiguous text, you may need to split your request into multiple
+    modify_text calls.
+```

@@ -110,8 +110,7 @@
       "group": "General",
       "pages": [
         "tools/general/answer_question",
-        "tools/general/custom_tool",
-        "tools/general/modify_text"
+        "tools/general/custom_tool"
       ]
     },
     {
@@ -123,6 +122,13 @@
         "tools/ide/file_navigation",
         "tools/ide/program_execution",
         "tools/ide/window_display"
+      ]
+    },
+    {
+      "group": "Writing",
+      "pages": [
+        "tools/writing/insert_text",
+        "tools/writing/modify_text"
       ]
     },
     {
