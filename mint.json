@@ -84,16 +84,6 @@
       ]
     },
     {
-      "group": "Voqal Abilities",
-      "pages": [
-        "abilities/programming",
-        "abilities/navigation",
-        "abilities/program_execution",
-        "abilities/display",
-        "abilities/qa"
-      ]
-    },
-    {
       "group": "Development",
       "pages": [
         "development/early_access_program",
