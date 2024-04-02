@@ -13,27 +13,25 @@ triggerable actions that can be used autonomously by the Voqal Assistant. By usi
 combination, Voqal can perform a wide variety of tasks. The Voqal Assistant can be programmed further via
 [Custom Tools](#custom-tools), allowing you to create your own tools that Voqal can then use autonomously.
 
-### General
+### General Purpose
 
 These tools are general purpose tools that can be used in a wide range of applications.
 They are not specific to any particular domain and can be used in a wide range of scenarios.
 
-### IDE
+### IDE Control
 
 These tools are used to interact with the Integrated Development Environment (IDE) of the Voqal Assistant.
 They are used to perform tasks such as navigating the codebase, running tests, and more.
 
-### Textual
+### Text Editing
 
 These tools are used to assist in writing tasks. They can be used to generate code, write documentation, and more.
 
-## Custom Tools
+### Custom Tools
 
 Uses [JSON Schema](https://json-schema.org/) to define the structure of the data that the tool expects.
 
-### Example Usage
-
-#### trigger_github_build
+#### Example Usage
 
 The following is an example of a custom tool that triggers a GitHub build. It takes a branch name as input
 and triggers a GitHub build for the specified branch in the owner/repo repository.

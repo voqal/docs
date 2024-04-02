@@ -108,13 +108,13 @@
       ]
     },
     {
-      "group": "General",
+      "group": "General Purpose",
       "pages": [
         "tools/general/answer_question"
       ]
     },
     {
-      "group": "IDE",
+      "group": "IDE Control",
       "pages": [
         "tools/ide/add_breakpoint",
         "tools/ide/create_file",
@@ -127,7 +127,7 @@
       ]
     },
     {
-      "group": "Textual",
+      "group": "Text Editing",
       "pages": [
         "tools/textual/insert_text",
         "tools/textual/modify_text"
