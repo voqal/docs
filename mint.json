@@ -48,16 +48,16 @@
   },
   "tabs": [
     {
+      "name": "Prompting",
+      "url": "prompting"
+    },
+    {
       "name": "Tools",
       "url": "tools"
     },
     {
       "name": "Integrations",
       "url": "integrations"
-    },
-    {
-      "name": "Prompting",
-      "url": "prompting"
     },
     {
       "name": "Roadmap",
@@ -98,6 +98,30 @@
       "pages": [
         "development/early_access_program",
         "development/changelog"
+      ]
+    },
+    {
+      "group": "Voqal Prompting",
+      "pages": [
+        "prompting/overview"
+      ]
+    },
+    {
+      "group": "Code Mode",
+      "pages": [
+        "prompting/code/voqal"
+      ]
+    },
+    {
+      "group": "Command Mode",
+      "pages": [
+        "prompting/command/voqal"
+      ]
+    },
+    {
+      "group": "Dictate Mode",
+      "pages": [
+        "prompting/dictate/voqal"
       ]
     },
     {
@@ -190,30 +214,6 @@
       "group": "Observability",
       "pages": [
         "integrations/observability/helicone"
-      ]
-    },
-    {
-      "group": "Voqal Prompting",
-      "pages": [
-        "prompting/overview"
-      ]
-    },
-    {
-      "group": "Code Mode",
-      "pages": [
-        "prompting/code/voqal"
-      ]
-    },
-    {
-      "group": "Command Mode",
-      "pages": [
-        "prompting/command/voqal"
-      ]
-    },
-    {
-      "group": "Dictate Mode",
-      "pages": [
-        "prompting/dictate/voqal"
       ]
     },
     {
