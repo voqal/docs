@@ -118,7 +118,7 @@
       "pages": [
         "tools/ide/add_breakpoint",
         "tools/ide/create_file",
-        "tools/ide/create_new_class",
+        "tools/ide/create_class",
         "tools/ide/play_program",
         "tools/ide/remove_breakpoint",
         "tools/ide/run_program",
