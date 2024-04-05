@@ -93,7 +93,8 @@
     {
       "group": "Voqal Prompting",
       "pages": [
-        "prompting/overview"
+        "prompting/overview",
+        "prompting/fine-tuning"
       ]
     },
     {
