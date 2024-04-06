@@ -179,6 +179,7 @@
     {
       "group": "Intent Detection",
       "pages": [
+        "integrations/intent/serenade",
         "integrations/intent/deepgram",
         "integrations/intent/picovoice"
       ]
