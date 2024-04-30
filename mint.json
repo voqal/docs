@@ -98,21 +98,12 @@
       ]
     },
     {
-      "group": "Code Mode",
+      "group": "Prompt Library",
       "pages": [
-        "prompting/code/voqal"
-      ]
-    },
-    {
-      "group": "Command Mode",
-      "pages": [
-        "prompting/command/voqal"
-      ]
-    },
-    {
-      "group": "Dictate Mode",
-      "pages": [
-        "prompting/dictate/voqal"
+        "prompting/library/code",
+        "prompting/library/command",
+        "prompting/library/dictate",
+        "prompting/library/edit"
       ]
     },
     {
