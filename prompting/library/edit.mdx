@@ -21,7 +21,7 @@ approach just like code mode.
 
 ## Prompt Details
 
-<Info>Prompt Name: Voqal Edit Prompt<br/>Prompt Version: 1.0</Info>
+<Info>Prompt Name: Voqal Edit Prompt<br/>Prompt Version: 1.1</Info>
 
 <Accordion title="Prompt Text">
 
@@ -34,20 +34,17 @@ approach just like code mode.
 
 Use the below developer transcription to focus on the text as indicated by the transcription.
 To "focus" on a piece of text you will need to return the exact text to be focused surrounded by triple backticks (```).
-To focus on multiple non-adjacent pieces of text, you will need to return each piece of text surrounded by triple
-backticks. For example, to focus on `line1 and line 3` in the following text:
+For example, to focus on `thing1 and thing3` in the following text:
 ```
-line1
-line2
-line3
+1|thing1
+2|thing2
+3|thing3
 ```
 
 You would return:
 ```
-line1
-```
-```
-line3
+1|thing1
+3|thing3
 ```
 
 {% else %}
@@ -70,7 +67,7 @@ Filename: {{ developer.viewingFile }}
 
 ```{{ developer.viewingCode.language }}
 
-{{ developer.viewingCode.code }}
+{{ developer.viewingCode.codeWithLineNumbers }}
 
 ```
 
