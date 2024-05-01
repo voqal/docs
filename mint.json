@@ -103,7 +103,8 @@
         "prompting/library/code",
         "prompting/library/command",
         "prompting/library/dictate",
-        "prompting/library/edit"
+        "prompting/library/edit",
+        "prompting/library/focus"
       ]
     },
     {
