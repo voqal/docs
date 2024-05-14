@@ -185,8 +185,9 @@
         "integrations/llm/openai",
         "integrations/llm/mistralai",
         "integrations/llm/huggingface",
+        "integrations/llm/togetherai",
         "integrations/llm/ollama",
-        "integrations/llm/togetherai"
+        "integrations/llm/groq"
       ]
     },
     {
