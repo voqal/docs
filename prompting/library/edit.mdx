@@ -1,5 +1,5 @@
 ---
-title: "Edit Mode (v1.2)"
+title: "Edit Mode (v1.3)"
 description: "Refactor text via conversational directives"
 icon: message-text
 ---
@@ -22,7 +22,7 @@ natural language instructions to refactor the text. Only focused text will be mo
 
 ## Prompt Details
 
-<Info>Prompt Name: Voqal Edit Mode<br/>Prompt Version: 1.2</Info>
+<Info>Prompt Name: Voqal Edit Mode<br/>Prompt Version: 1.3</Info>
 
 <Accordion title="Prompt Text">
 
@@ -41,7 +41,17 @@ If the developer compliments you, do not respond with something like "Glad you l
 free to ask." Just repeat the previous code output or a new code output if the developer has provided new information.
 If you are unsure what to do, return the original text with no changes.
 
+## Project Structure
+
+> The file structure of the current project.
+
+```
+{{ ide.projectFileTree }}
+```
+
 ## Viewing Text
+
+> The full text of the file the developer is looking at.
 
 Filename: {{ developer.viewingFile }}
 

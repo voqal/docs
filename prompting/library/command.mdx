@@ -1,5 +1,5 @@
 ---
-title: "Command Mode (v1.0)"
+title: "Command Mode (v1.1)"
 description: "Instruct Voqal to perform specific actions using available tools"
 icon: message-bot
 ---
@@ -18,7 +18,7 @@ various other programmable tasks.
 
 ## Prompt Details
 
-<Info>Prompt Name: Voqal Command Mode<br/>Prompt Version: 1.0</Info>
+<Info>Prompt Name: Voqal Command Mode<br/>Prompt Version: 1.1</Info>
 
 <Accordion title="Prompt Text">
 
@@ -71,34 +71,20 @@ To use a tool respond in the following format:
 - Where \<ToolName\> = one of the available tools above
 - Where \<ToolParameters\> = the corresponding JSON parameters necessary to invoke that tool
 
-To use multiple tools (or the same tool multiple times) respond in the following format:
-
-````
-## Assistant Tool Request
-
-### modify_text
-
-```json
-{
-  "old_text": "foo",
-  "new_text": "bar"
-}
-```
-
-### modify_text
-
-```json
-{
-  "old_text": "baz",
-  "new_text": "qux"
-}
-```
-````
+To use multiple tools (or the same tool multiple times) respond with multiple tool requests.
 
 # Developer
 
 > The data in this section is generated based on the developer's current activity. You are to use this as context to
 > fulfill the requests in the developer's transcription
+
+## Project Structure
+
+> The file structure of the current project.
+
+```
+{{ ide.projectFileTree }}
+```
 
 ## Developer Activity
 
@@ -109,6 +95,8 @@ To use multiple tools (or the same tool multiple times) respond in the following
 > The files the developer currently has open. May or may not be relevant to the developer's transcription.
 
 {% for file in developer.openFiles %}
+
+Filename: {{ file.filename }}
 
 ```{{ file.language }}
 
@@ -132,6 +120,8 @@ To use multiple tools (or the same tool multiple times) respond in the following
 
 {% if developer.isBreakpointRelated %}
 
+Filename: {{ file.filename }}
+
 ```{{ developer.viewingCode.language }}
 
 {{ developer.viewingCode.codeWithLineNumbers }}
@@ -139,6 +129,8 @@ To use multiple tools (or the same tool multiple times) respond in the following
 ```
 
 {% else %}
+
+Filename: {{ file.filename }}
 
 ```{{ developer.viewingCode.language }}
 

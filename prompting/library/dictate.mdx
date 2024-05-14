@@ -1,5 +1,5 @@
 ---
-title: "Dictate Mode (v1.0)"
+title: "Dictate Mode (v1.1)"
 description: "Write down spoken words including punctuation and capitalization"
 icon: message-quote
 ---
@@ -74,7 +74,7 @@ Use the append mode if no edits to the previous transcription are required.
 
 This is the regex used to parse your response:
 ```regexp
-(append|replace): `(.+)`
+(append|replace): ["`](.+)["`]
 ```
 
 # User
