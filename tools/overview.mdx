@@ -47,8 +47,8 @@ function:
         type: string
         description: The branch to build.
     required:
-    - branch
+      - branch
   description: Use this tool whenever the developer asks you to trigger a github build.
-    exec:
-      command: gh workflow run build.yml --repo owner/repo --ref $[[branch]]
+  exec:
+    command: gh workflow run build.yml --repo owner/repo --ref $[[branch]]
 ```
