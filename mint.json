@@ -51,16 +51,20 @@
   },
   "tabs": [
     {
-      "name": "Prompting",
-      "url": "prompting"
+      "name": "Integrations",
+      "url": "integrations"
+    },
+    {
+      "name": "Library",
+      "url": "library"
     },
     {
       "name": "Tools",
       "url": "tools"
     },
     {
-      "name": "Integrations",
-      "url": "integrations"
+      "name": "Flows",
+      "url": "flows"
     },
     {
       "name": "Roadmap",
@@ -77,16 +81,6 @@
       ]
     },
     {
-      "group": "Voqal Configuration",
-      "pages": [
-        "configuration/wake_detection",
-        "configuration/speech_to_text",
-        "configuration/language_model",
-        "configuration/text_to_speech",
-        "configuration/ide_tuning"
-      ]
-    },
-    {
       "group": "Development",
       "pages": [
         "development/early_access_program",
@@ -94,20 +88,20 @@
       ]
     },
     {
-      "group": "Voqal Prompting",
+      "group": "Voqal Library",
       "pages": [
-        "prompting/overview",
-        "prompting/fine-tuning"
+        "library/overview",
+        "library/fine-tuning"
       ]
     },
     {
-      "group": "Prompt Library",
+      "group": "Embedded",
       "pages": [
-        "prompting/library/code",
-        "prompting/library/command",
-        "prompting/library/dictate",
-        "prompting/library/edit",
-        "prompting/library/focus"
+        "library/embedded/code",
+        "library/embedded/dictate",
+        "library/embedded/edit",
+        "library/embedded/focus",
+        "library/embedded/idle"
       ]
     },
     {
@@ -115,6 +109,18 @@
       "pages": [
         "tools/overview",
         "tools/intents"
+      ]
+    },
+    {
+      "group": "Voqal Flowing",
+      "pages": [
+        "flows/overview"
+      ]
+    },
+    {
+      "group": "Demos",
+      "pages": [
+        "flows/demo/alert-on-build"
       ]
     },
     {

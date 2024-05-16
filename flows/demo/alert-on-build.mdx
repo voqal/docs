@@ -1,0 +1,50 @@
+---
+title: "Alert Me After Build"
+description: "Get pinged after a build has finished running."
+icon: message-code
+---
+
+<Warning>This is currently under development.</Warning>
+
+# Alert Me After Build
+
+This flow is a simple example of how you can use the Github API to trigger a build and then wait for it to finish.
+Once the build has finished, you will be alerted that it has completed.
+
+To get this flow to trigger, you just need to say something like:
+
+> build the master branch, wait for it to finish, and alert me when its done
+
+## Flow Demo
+
+<video
+  controls
+  className="w-full aspect-video"
+  src="/videos/dictate-mode.mp4"
+></video>
+
+### Flow Source
+
+```yaml
+type: function
+function:
+  name: trigger_github_build
+  parameters:
+    type: object
+    properties:
+      branch:
+        type: string
+        description: The branch to build.
+    required:
+      - branch
+  description: Use this tool whenever the developer asks you to trigger a github build.
+  exec:
+    command: gh workflow run build.yml --repo owner/repo --ref $[[branch]]
+
+type: function
+function:
+  name: wait_for_all_github_builds
+  description: Use this tool whenever the developer asks you to wait for github builds to finish.
+    exec:
+      command: gh run list --status=completed --json | jq '.workflow_runs | map(select(.name == "build.yml")) | map(select(.status == "completed")) | length'
+```
