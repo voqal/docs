@@ -118,7 +118,7 @@
       ]
     },
     {
-      "group": "Demos",
+      "group": "Demonstrations",
       "pages": [
         "flows/demo/alert-on-build"
       ]
