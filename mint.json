@@ -120,7 +120,7 @@
     {
       "group": "Demonstrations",
       "pages": [
-        "flows/demo/alert-on-build"
+        "flows/demo/build-finished-alert"
       ]
     },
     {
