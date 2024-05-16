@@ -23,6 +23,10 @@ To get this flow to trigger, you just need to say something like:
 
 ### Flow Source
 
+````
+
+### alert_me
+
 ```yaml
 type: function
 function:
@@ -31,7 +35,11 @@ function:
   tool:
     play_sound:
       audio: $[[project]]/.voqal/notifications/alert.mp3
+```
 
+### trigger_github_build
+
+```yaml
 type: function
 function:
   name: trigger_github_build
@@ -46,7 +54,11 @@ function:
   description: Use this tool whenever the developer asks you to trigger a github build.
   exec:
     command: gh workflow run build.yml --repo owner/repo --ref $[[branch]]
+```
 
+### wait_for_github_builds
+
+```yaml
 type: function
 function:
   name: wait_for_github_builds
@@ -55,3 +67,4 @@ function:
     command: while ($true) { if (-not (gh run list --status=in_progress --json status | ConvertFrom-Json | Where-Object { $_.status -eq "in_progress" })) { break } Start-Sleep -Seconds 10 }
     type: powershell
 ```
+````
