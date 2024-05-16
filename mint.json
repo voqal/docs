@@ -63,8 +63,8 @@
       "url": "tools"
     },
     {
-      "name": "Flows",
-      "url": "flows"
+      "name": "Flowing",
+      "url": "flowing"
     },
     {
       "name": "Roadmap",
@@ -114,13 +114,13 @@
     {
       "group": "Voqal Flowing",
       "pages": [
-        "flows/overview"
+        "flowing/overview"
       ]
     },
     {
       "group": "Demonstrations",
       "pages": [
-        "flows/demo/build-finished-alert"
+        "flowing/demo/build-finished-alert"
       ]
     },
     {
