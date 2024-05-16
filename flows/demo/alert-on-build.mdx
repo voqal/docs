@@ -29,14 +29,6 @@ To get this flow to trigger, you just need to say something like:
 type: function
 function:
   name: alert_me
-  parameters:
-    type: object
-    properties:
-      message:
-        type: string
-        description: The message to alert the user with.
-    required:
-      - message
   description: Use this tool whenever the developer asks you to alert them.
   tool:
     play_sound:
