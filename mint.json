@@ -164,13 +164,6 @@
       ]
     },
     {
-      "group": "Wake Word",
-      "pages": [
-        "integrations/wake/deepgram",
-        "integrations/wake/picovoice"
-      ]
-    },
-    {
       "group": "Voice Detection",
       "pages": [
         "integrations/vad/picovoice",
