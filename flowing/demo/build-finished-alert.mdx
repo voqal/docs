@@ -21,27 +21,6 @@ To get this flow to trigger, you just need to say something like:
   src="/videos/alert-me.mp4"
 ></video>
 
-### Example Response
-
-````
-### trigger_github_build
-```json
-{
-  "branch": "master"
-}
-```
-
-### wait_for_github_builds
-```json
-{}
-```
-
-### alert_me
-```json
-{}
-```
-````
-
 ### Custom Tools
 
 > To use this flow, add the below [custom tools](https://docs.voqal.dev/tools/overview#custom-tools) to the [Voqal Idle Mode](/library/embedded/idle) prompt.
@@ -89,5 +68,26 @@ function:
   exec:
     command: Set-Location $[[project_home]]; Start-Sleep -Seconds 10; while ($true) { if (-not (gh run list --status=in_progress --json status | ConvertFrom-Json | Where-Object { $_.status -eq "in_progress" })) { break } Start-Sleep -Seconds 1 }
     type: powershell
+```
+````
+
+### Example Response
+
+````
+### trigger_github_build
+```json
+{
+  "branch": "master"
+}
+```
+
+### wait_for_github_builds
+```json
+{}
+```
+
+### alert_me
+```json
+{}
 ```
 ````
