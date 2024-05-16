@@ -28,6 +28,22 @@ To get this flow to trigger, you just need to say something like:
 ```yaml
 type: function
 function:
+  name: alert_me
+  parameters:
+    type: object
+    properties:
+      message:
+        type: string
+        description: The message to alert the user with.
+    required:
+      - message
+  description: Use this tool whenever the developer asks you to alert them.
+  tool:
+    play_sound:
+      audio: go-time.mp3
+
+type: function
+function:
   name: trigger_github_build
   parameters:
     type: object
@@ -43,8 +59,9 @@ function:
 
 type: function
 function:
-  name: wait_for_all_github_builds
+  name: wait_for_github_builds
   description: Use this tool whenever the developer asks you to wait for github builds to finish.
-    exec:
-      command: gh run list --status=completed --json | jq '.workflow_runs | map(select(.name == "build.yml")) | map(select(.status == "completed")) | length'
+  exec:
+    command: while ($true) { if (-not (gh run list --status=in_progress --json status | ConvertFrom-Json | Where-Object { $_.status -eq "in_progress" })) { break } Start-Sleep -Seconds 10 }
+    type: powershell
 ```
