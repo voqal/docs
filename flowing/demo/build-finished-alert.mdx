@@ -35,7 +35,7 @@ function:
   name: alert_me
   description: Use this tool whenever the developer asks you to alert them.
   exec:
-    command: Add-Type -AssemblyName presentationCore; $mediaPlayer = New-Object system.windows.media.mediaplayer; $mediaPlayer.open('$[[project_home]]/.voqal/notifications/alert.mp3'); $mediaPlayer.Play();
+    command: Add-Type -AssemblyName presentationCore; $mediaPlayer = New-Object system.windows.media.mediaplayer; $mediaPlayer.open('$[[project_home]]\.voqal\notifications\alert.mp3'); $mediaPlayer.Play();
     type: powershell
 ```
 
