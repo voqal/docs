@@ -129,7 +129,8 @@
       "pages": [
         "tools/general/answer_question",
         "tools/general/ignore",
-        "tools/general/prompt_dispatch"
+        "tools/general/prompt_dispatch",
+        "tools/general/stop_listening"
       ]
     },
     {
@@ -165,7 +166,6 @@
         "tools/ide/show_ide",
         "tools/ide/show_tab",
         "tools/ide/show_tool_window",
-        "tools/ide/stop_listening",
         "tools/ide/stop_program",
         "tools/ide/undo",
         "tools/ide/window_display"
