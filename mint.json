@@ -108,8 +108,7 @@
     {
       "group": "Voqal Tools",
       "pages": [
-        "tools/overview",
-        "tools/intents"
+        "tools/overview"
       ]
     },
     {
@@ -128,27 +127,48 @@
     {
       "group": "General Purpose",
       "pages": [
-        "tools/general/answer_question"
+        "tools/general/answer_question",
+        "tools/general/ignore",
+        "tools/general/prompt_dispatch"
       ]
     },
     {
       "group": "IDE Control",
       "pages": [
+        "tools/ide/accept_completion",
         "tools/ide/add_breakpoint",
-        "tools/ide/create_file",
+        "tools/ide/backspace",
+        "tools/ide/breakpoint_management",
+        "tools/ide/close_file",
+        "tools/ide/code_completion",
         "tools/ide/create_class",
+        "tools/ide/create_file",
+        "tools/ide/delete_line",
+        "tools/ide/editor_control",
+        "tools/ide/end_of_line",
+        "tools/ide/file_navigation",
+        "tools/ide/goto_line",
+        "tools/ide/hide_completions",
+        "tools/ide/hide_ide",
+        "tools/ide/hide_tool_window",
+        "tools/ide/new_line",
+        "tools/ide/next_completion",
+        "tools/ide/open_file",
         "tools/ide/play_program",
+        "tools/ide/previous_completion",
+        "tools/ide/program_execution",
+        "tools/ide/redo",
         "tools/ide/remove_breakpoint",
         "tools/ide/run_program",
+        "tools/ide/scroll",
+        "tools/ide/show_completions",
+        "tools/ide/show_ide",
         "tools/ide/show_tab",
-        "tools/ide/stop_program"
-      ]
-    },
-    {
-      "group": "Text Editing",
-      "pages": [
-        "tools/textual/insert_text",
-        "tools/textual/modify_text"
+        "tools/ide/show_tool_window",
+        "tools/ide/stop_listening",
+        "tools/ide/stop_program",
+        "tools/ide/undo",
+        "tools/ide/window_display"
       ]
     },
     {
