@@ -121,7 +121,8 @@
     {
       "group": "Demonstrations",
       "pages": [
-        "flowing/demo/build-finished-alert"
+        "flowing/demo/build-finished-alert",
+        "flowing/demo/what-time-is-it"
       ]
     },
     {

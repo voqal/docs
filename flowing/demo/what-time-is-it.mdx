@@ -1,0 +1,64 @@
+---
+title: "What Time Is It?"
+description: "Give Voqal the ability to tell you the time."
+icon: clock
+---
+
+<Warning>This is currently under development.</Warning>
+
+As of now (2024.8.0) Voqal cannot tell you the current time. However this ability is easy to implement and provides
+a great example of how easy it is to customize Voqal for dynamic data.
+
+## Demonstration
+
+<video
+  controls
+  className="w-full aspect-video"
+  src="/videos/what-time-is-it.mp4"
+></video>
+
+### Custom Prompt URL
+
+```kotlin
+fun main() {
+    embeddedServer(Netty, port = 8080) {
+        routing {
+            get("/time-aware-voqal") {
+                //download idle mode prompt
+                val idleModeText = URL("https://voqal.dev/library/embedded/voqal-idle-mode.md").readText()
+
+                //create prompt containing current time
+                val timePrompt = buildString {
+                    appendLine("## System Information")
+                    appendLine()
+                    appendLine("Current time is: ${Instant.now()}")
+                    appendLine("Current timezone is: ${System.getProperty("user.timezone")}")
+                    appendLine()
+                }
+
+                //insert system information before `## System Mode` section
+                val systemModeIndex = idleModeText.indexOf("## System Mode")
+                val timeAwarePrompt = idleModeText.substring(0, systemModeIndex) +
+                        timePrompt + idleModeText.substring(systemModeIndex)
+
+                //return updated prompt
+                call.respondText(timeAwarePrompt)
+            }
+        }
+    }.start(wait = true)
+}
+```
+
+### Example Response
+
+````
+## Assistant Tool Request
+
+### answer_question
+
+```json
+{
+  "answer": "The current time is 19:51 and the timezone is GMT-05:00."
+}
+```
+````
