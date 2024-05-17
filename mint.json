@@ -77,7 +77,8 @@
       "pages": [
         "introduction",
         "quickstart",
-        "privacy"
+        "privacy",
+        "advanced-configuration"
       ]
     },
     {
