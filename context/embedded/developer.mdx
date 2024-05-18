@@ -53,4 +53,46 @@ context:
       focusRequest:
         type: string
         description: The focus request of the user's voice input.
+
+definitions:
+  File:
+    type: object
+    properties:
+    code:
+      type: string
+      description: Raw text of the code.
+    language:
+      type: string
+      description: The language of the code.
+    filename:
+      type: string
+      description: The name of the file.
+
+  Code:
+    type: object
+    properties:
+    code:
+      type: string
+      description: Raw text of the code.
+    codeWithLineNumbers:
+      type: string
+      description: Code with line numbers.
+    language:
+      type: string
+      description: The language of the code.
+    filename:
+      type: string
+      description: The name of the file.
+    caretId:
+      type: string
+      description: The ID of the caret.
+    caretOffset:
+      type: integer
+      description: The offset of the caret.
+    caretLine:
+      type: integer
+      description: The line of the caret.
+    caretColumn:
+      type: integer
+      description: The column of the caret.
 ```
