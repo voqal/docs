@@ -24,7 +24,7 @@ Here is a example of a directive that opens a file and adds breakpoints to every
 In this example, the directive is made up of two tools: [Open File](/tools/ide/open_file) and [Add Breakpoints](/tools/ide/add_breakpoint).
 The directive starts by sending the argument of `user endpoint file` to the `Open File` tool. This is then executed followed by
 the `Add Breakpoints` tool which takes the argument `anything that calls to string` and adds breakpoints to every line that
-calls the `toString()` function.
+calls "to string" (i.e. `toString()`).
 
 Do note that while both "open file" and "add breakpoints" were both spoken verbatim, this is not a requirement. When
 directing, you can use any natural language you like to describe the actions you want to take. As long as you are clear about
