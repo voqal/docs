@@ -132,7 +132,7 @@
     {
       "group": "Third Party",
       "pages": [
-        "context/third-party/skywalking"
+        "context/third-party/apache_skywalking"
       ]
     },
     {
