@@ -51,8 +51,8 @@
   },
   "tabs": [
     {
-      "name": "Integrations",
-      "url": "integrations"
+      "name": "Compute",
+      "url": "compute"
     },
     {
       "name": "Modes",
@@ -198,57 +198,57 @@
       ]
     },
     {
-      "group": "Voqal Integrations",
+      "group": "Voqal Compute",
       "pages": [
-        "integrations/overview"
+        "compute/overview"
       ]
     },
     {
       "group": "Speech-to-Text",
       "pages": [
-        "integrations/stt/deepgram",
-        "integrations/stt/openai",
-        "integrations/stt/picovoice"
+        "compute/stt/deepgram",
+        "compute/stt/openai",
+        "compute/stt/picovoice"
       ]
     },
     {
       "group": "Voice Detection",
       "pages": [
-        "integrations/vad/picovoice",
-        "integrations/vad/voqal"
+        "compute/vad/picovoice",
+        "compute/vad/voqal"
       ]
     },
     {
       "group": "Intent Detection",
       "pages": [
-        "integrations/intent/deepgram",
-        "integrations/intent/serenade",
-        "integrations/intent/picovoice"
+        "compute/intent/deepgram",
+        "compute/intent/serenade",
+        "compute/intent/picovoice"
       ]
     },
     {
       "group": "Large Language Model",
       "pages": [
-        "integrations/llm/openai",
-        "integrations/llm/mistralai",
-        "integrations/llm/huggingface",
-        "integrations/llm/togetherai",
-        "integrations/llm/ollama",
-        "integrations/llm/groq"
+        "compute/llm/openai",
+        "compute/llm/mistralai",
+        "compute/llm/huggingface",
+        "compute/llm/togetherai",
+        "compute/llm/ollama",
+        "compute/llm/groq"
       ]
     },
     {
       "group": "Text-to-Speech",
       "pages": [
-        "integrations/tts/openai",
-        "integrations/tts/deepgram",
-        "integrations/tts/picovoice"
+        "compute/tts/openai",
+        "compute/tts/deepgram",
+        "compute/tts/picovoice"
       ]
     },
     {
       "group": "Observability",
       "pages": [
-        "integrations/observability/helicone"
+        "compute/observability/helicone"
       ]
     },
     {
