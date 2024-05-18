@@ -195,8 +195,7 @@
         "tools/ide/show_tab",
         "tools/ide/show_tool_window",
         "tools/ide/stop_program",
-        "tools/ide/undo",
-        "tools/ide/window_display"
+        "tools/ide/undo"
       ]
     },
     {
