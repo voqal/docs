@@ -145,7 +145,8 @@
       "group": "Demonstrations",
       "pages": [
         "directing/demo/build-finished-alert",
-        "directing/demo/what-time-is-it"
+        "directing/demo/what-time-is-it",
+        "directing/demo/tell-discord"
       ]
     },
     {

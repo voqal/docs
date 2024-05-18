@@ -1,0 +1,50 @@
+---
+title: "Tell Discord"
+description: "Send voice message as text message to Discord channel"
+icon: discord
+---
+
+This directive allows you to use your Voqal Assistant as a Discord bot which will send messages on your behalf.
+
+## Directive
+
+> tell discord eap now has the fix for the null pointer on google api
+
+## Demonstration
+
+
+### Custom Tools
+
+> To use this directive, add the below [custom tools](/tools/overview/#custom-tools) to the [Voqal Idle Mode](/modes/embedded/idle) prompt.
+
+````
+### tell_discord
+
+```yaml
+type: function
+function:
+  name: tell_discord
+  parameters:
+    type: object
+    properties:
+      message:
+        type: string
+        description: The message to send to Discord.
+    required:
+      - message
+  description: Use this tool whenever the developer asks you to tell Discord something. Convert the audio to text.
+  exec:
+    command: curl -H "Content-Type: application/json" -d "{\"content\":\"$[[message]]\"}" <<DISCORD_WEBHOOK>>
+```
+````
+
+### Example Response
+
+````
+### tell_discord
+```json
+{
+  "branch": "eap now has the fix for the null pointer on google api"
+}
+```
+````
