@@ -34,7 +34,7 @@ function:
       - message
   description: Use this tool whenever the developer asks you to tell Discord something. Transcribes the message to Discord.
   exec:
-    command: curl -H "Content-Type: application/json" -d "{\"content\":\"$[[message]]\"}" <<DISCORD_WEBHOOK>>
+    command: 'curl -H "Content-Type: application/json" -d "{\"content\":\"$[[message]]\"}" <<DISCORD_WEBHOOK>>'
 ```
 ````
 
