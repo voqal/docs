@@ -45,6 +45,7 @@ function:
 type: function
 function:
   name: trigger_github_build
+  description: Use this tool whenever the developer asks you to trigger a github build.
   parameters:
     type: object
     properties:
@@ -53,7 +54,6 @@ function:
         description: The branch to build.
     required:
       - branch
-  description: Use this tool whenever the developer asks you to trigger a github build.
   exec:
     command: gh workflow run build.yml --repo owner/repo --ref $[[branch]]
 ```

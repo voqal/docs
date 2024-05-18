@@ -21,6 +21,7 @@ This directive allows you to use your Voqal Assistant as a Discord bot which wil
 type: function
 function:
   name: tell_discord
+  description: Use this tool whenever the developer asks you to tell Discord something. Transcribes the message to Discord.
   parameters:
     type: object
     properties:
@@ -29,7 +30,6 @@ function:
         description: The message to send to Discord.
     required:
       - message
-  description: Use this tool whenever the developer asks you to tell Discord something. Transcribes the message to Discord.
   exec:
     command: 'curl -H "Content-Type: application/json" -d "{\"content\":\"$[[message]]\"}" <<DISCORD_WEBHOOK>>'
 ```
