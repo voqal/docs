@@ -1,6 +1,6 @@
 ---
 title: "Overview"
-description: "Personalize your Voqal Assistant for your workflow, codebase, and team"
+description: "Prepare your Voqal Assistant for the tasks ahead"
 icon: sitemap
 ---
 
@@ -9,35 +9,37 @@ icon: sitemap
 The Voqal Assistant offers easy access to the underlying prompts used to power Voqal.
 Feel free to use the prompts as they are, or customize them to fit to your needs.
 
-## Embedded Prompts
+## Embedded
 
-The Voqal Assistant comes with five embedded prompts: `Code`, `Dictate`, `Edit`, `Focus`, and `Idle`.
-Each prompt represents a different "mode" Voqal can be in and are designed to handle different types of tasks.
+The Voqal Assistant comes with five embedded modes: `Code`, `Dictate`, `Edit`, `Focus`, and `Idle`.
+Each mode represents a different state Voqal can be in and are designed to handle different types of tasks. Each mode
+has access to different [Voqal Tools](/tools/overview), so it's important to be in the "right gear" for the task at hand.
+You won't be able to edit text in the focus mode.
 
 ### Code Mode
 
-The [Voqal Code Mode](/library/embedded/code) is used for real-time oral and written natural language programming.
+The [Voqal Code Mode](/modes/embedded/code) is used for real-time oral and written natural language programming.
 It translates natural language into the closest possible code representation one to several lines of code at a time.
 This prompt is designed to give developers fine-grain control over the code they write, while still providing the
 benefits of natural speech programming.
 
 ### Dictate Mode
 
-The [Voqal Dictate Mode](/library/embedded/dictate) is used for writing long-form text, such as documentation.
+The [Voqal Dictate Mode](/modes/embedded/dictate) is used for writing long-form text, such as documentation.
 This prompt translates natural language into written text as accurately as possible, including punctuation,
 capitalization, and other formatting.
 
 ### Edit Mode
 
-The [Voqal Edit Mode](/library/embedded/edit) is used for editing code, text, and other content.
+The [Voqal Edit Mode](/modes/embedded/edit) is used for editing code, text, and other content.
 This prompt is designed for precision editing by first requiring the text which may be modified to first be focused on.
 
 ### Focus Mode
 
-The [Voqal Focus Mode](/library/embedded/focus) is used for focusing on specific parts of code, text, and other content.
+The [Voqal Focus Mode](/modes/embedded/focus) is used for focusing on specific parts of code, text, and other content.
 This prompt is used as a precursor to the [Edit Mode](/library/embedded/edit) and other modes which require a specific focus.
 
 ### Idle Mode
 
-The [Voqal Idle Mode](/library/embedded/idle) is used for a broad range of tasks as are available via [Voqal Tools](/tools/).
+The [Voqal Idle Mode](/modes/embedded/idle) is used for a broad range of tasks as are available via [Voqal Tools](/tools/).
 This is the default mode your Voqal Assistant will be in when not actively engaged in a specific task.

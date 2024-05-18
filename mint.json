@@ -55,8 +55,8 @@
       "url": "integrations"
     },
     {
-      "name": "Library",
-      "url": "library"
+      "name": "Modes",
+      "url": "modes"
     },
     {
       "name": "Tools",
@@ -93,20 +93,20 @@
       ]
     },
     {
-      "group": "Voqal Library",
+      "group": "Voqal Modes",
       "pages": [
-        "library/overview",
-        "library/fine-tuning"
+        "modes/overview",
+        "modes/fine-tuning"
       ]
     },
     {
       "group": "Embedded",
       "pages": [
-        "library/embedded/code",
-        "library/embedded/dictate",
-        "library/embedded/edit",
-        "library/embedded/focus",
-        "library/embedded/idle"
+        "modes/embedded/code",
+        "modes/embedded/dictate",
+        "modes/embedded/edit",
+        "modes/embedded/focus",
+        "modes/embedded/idle"
       ]
     },
     {
