@@ -152,7 +152,9 @@
       "group": "General Purpose",
       "pages": [
         "tools/general/answer_question",
+        "tools/general/cancel",
         "tools/general/ignore",
+        "tools/general/looks_good",
         "tools/general/prompt_dispatch",
         "tools/general/stop_listening"
       ]
