@@ -15,14 +15,14 @@ the easier it will be to [direct like a pro](https://media1.tenor.com/m/IsYdPRq7
 
 The basic idea behind directing is to quickly and efficiently execute some complex operation by delegating the actual work to your Voqal Assistant.
 Each tool has a specific purpose and can be used in a variety of ways. When you chain tools together, you are creating a
-flow that takes the output of one tool and uses it as the input for the next tool in the chain.
+directive that takes the output of one tool and uses it as the input for the next tool in the chain.
 
-Here is a simple example of a flow that opens a file and adds breakpoints to every line that calls a specific function:
+Here is a simple example of a directive that opens a file and adds breakpoints to every line that calls a specific function:
 
 > open the user endpoint file and add breakpoints to anything that calls to string
 
-In this example, the flow is made up of two tools: [Open File](/tools/ide/open_file) and [Add Breakpoints](/tools/ide/add_breakpoint).
-The flow starts by sending the argument of `user endpoint file` to the `Open File` tool. This is then executed followed by
+In this example, the directive is made up of two tools: [Open File](/tools/ide/open_file) and [Add Breakpoints](/tools/ide/add_breakpoint).
+The directive starts by sending the argument of `user endpoint file` to the `Open File` tool. This is then executed followed by
 the `Add Breakpoints` tool which takes the argument `anything that calls to string` and adds breakpoints to every line that
 calls the `toString()` function.
 
