@@ -25,7 +25,7 @@ fun main() {
         routing {
             get("/time-aware-voqal") {
                 //download idle mode prompt
-                val idleModeText = URL("https://voqal.dev/library/embedded/voqal-idle-mode.md").readText()
+                val idleModeText = URL("https://voqal.dev/prompts/embedded/voqal-idle-mode.md").readText()
 
                 //create prompt containing current time
                 val timePrompt = buildString {
