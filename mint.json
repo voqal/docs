@@ -67,8 +67,8 @@
       "url": "context"
     },
     {
-      "name": "Flowing",
-      "url": "flowing"
+      "name": "Directing",
+      "url": "directing"
     },
     {
       "name": "Roadmap",
@@ -136,16 +136,16 @@
       ]
     },
     {
-      "group": "Voqal Flowing",
+      "group": "Voqal Directing",
       "pages": [
-        "flowing/overview"
+        "directing/overview"
       ]
     },
     {
       "group": "Demonstrations",
       "pages": [
-        "flowing/demo/build-finished-alert",
-        "flowing/demo/what-time-is-it"
+        "directing/demo/build-finished-alert",
+        "directing/demo/what-time-is-it"
       ]
     },
     {
