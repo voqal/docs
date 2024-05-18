@@ -63,6 +63,10 @@
       "url": "tools"
     },
     {
+      "name": "Context",
+      "url": "context"
+    },
+    {
       "name": "Flowing",
       "url": "flowing"
     },
@@ -109,6 +113,26 @@
       "group": "Voqal Tools",
       "pages": [
         "tools/overview"
+      ]
+    },
+    {
+      "group": "Voqal Context",
+      "pages": [
+        "context/overview"
+      ]
+    },
+    {
+      "group": "Embedded",
+      "pages": [
+        "context/embedded/assistant",
+        "context/embedded/developer",
+        "context/embedded/ide"
+      ]
+    },
+    {
+      "group": "Third Party",
+      "pages": [
+        "context/third-party/skywalking"
       ]
     },
     {

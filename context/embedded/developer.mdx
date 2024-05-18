@@ -1,0 +1,54 @@
+---
+title: "Developer"
+icon: person
+---
+
+## Schema
+
+```yaml
+context:
+  name: developer
+  description: Provides information about the developer.
+  parameters:
+    type: object
+    properties:
+      transcription:
+        type: string
+        description: The transcription of the user's voice input.
+      openFiles:
+        type: array
+        items:
+        $ref: "#/definitions/File"
+        description: The list of open files.
+      viewingFile:
+        $ref: "#/definitions/File"
+        description: The file that the user is currently viewing.
+      viewingCode:
+        $ref: "#/definitions/Code"
+        description: The code that the user is currently viewing.
+      selectedCode:
+        $ref: "#/definitions/Code"
+        description: The code that the user has selected.
+      isBreakpointRelated:
+        type: boolean
+        description: Whether the user's voice input is related to breakpoints.
+      activeBreakpoints:
+        type: array
+        items:
+          type: integer
+          description: The list of active breakpoints.
+      textOnly:
+        type: boolean
+        description: Whether the user's voice input is text only.
+      partialTranscription:
+        type: string
+        description: The partial transcription of the user's voice input.
+      focusedTexts:
+        type: array
+        items:
+          type: string
+          description: The list of focused texts.
+      focusRequest:
+        type: string
+        description: The focus request of the user's voice input.
+```
