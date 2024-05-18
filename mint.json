@@ -102,11 +102,11 @@
     {
       "group": "Embedded",
       "pages": [
+        "modes/embedded/idle",
         "modes/embedded/code",
         "modes/embedded/dictate",
         "modes/embedded/edit",
-        "modes/embedded/focus",
-        "modes/embedded/idle"
+        "modes/embedded/focus"
       ]
     },
     {
