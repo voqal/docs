@@ -12,20 +12,11 @@ to that request. Voqal leverages this functionality by adding the available [Voq
 your request and any other relevant information. It then sends that off to the language model(s) which pick and choose
 which tool(s) Voqal executes to fulfill your request.
 
-## Embedded
-
-There are currently three embedded context providers:
- - `voqal.assistant`
- - `voqal.developer`
- - `voqal.ide`
-
- These context providers are always available and can be used to provide dynamic information to your Voqal Assistant.
-
- ### Templating
+## Templating
 
 Uses [Pebble Templates](https://pebbletemplates.io/) to render the context dump for given [prompt details](/modes/embedded/idle#prompt-details):
 
- ````markdown
+````markdown
 ## System Available Tools
 
 {% for tool in system.availableTools %}
@@ -38,6 +29,15 @@ Uses [Pebble Templates](https://pebbletemplates.io/) to render the context dump 
 ````
 
 The above snippet shows the primary code used to add [Voqal Tools](/tools/overview) to the current context.
+
+## Embedded
+
+There are currently three embedded context providers:
+ - `voqal.assistant`
+ - `voqal.developer`
+ - `voqal.ide`
+
+ These context providers are always available and can be used to provide dynamic information to your Voqal Assistant.
 
  ## Third Party
 
