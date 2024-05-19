@@ -19,6 +19,26 @@ There are currently three embedded context providers:
  - `voqal.developer`
  - `voqal.ide`
 
+ These context providers are always available and can be used to provide dynamic information to your Voqal Assistant.
+
+ ### How It Works
+
+Uses [Pebble Templates](https://pebbletemplates.io/) to render the context dump using [prompt details](/modes/embedded/idle#prompt-details):
+
+ ````markdown
+## System Available Tools
+
+{% for tool in system.availableTools %}
+
+### {{ tool.name }}
+```yaml
+{{ tool.yaml }}
+```
+{% endfor %}
+````
+
+The above snippet shows the primary code used to add [Voqal Tools](/tools/overview) to the current context.
+
  ## Third Party
 
  Not yet supported.
