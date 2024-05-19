@@ -22,9 +22,11 @@ Uses [Pebble Templates](https://pebbletemplates.io/) to render the full context 
 {% for tool in voqal.assistant.availableTools %}
 
 ### {{ tool.name }}
+
 ```yaml
 {{ tool.yaml }}
 ```
+
 {% endfor %}
 ````
 
