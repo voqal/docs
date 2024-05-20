@@ -71,10 +71,6 @@
       "url": "directing"
     },
     {
-      "name": "Roadmap",
-      "url": "roadmap"
-    },
-    {
       "name": "Troubleshooting",
       "url": "troubleshooting"
     }
@@ -93,7 +89,8 @@
       "group": "Development",
       "pages": [
         "development/early_access_program",
-        "development/changelog"
+        "development/changelog",
+        "development/roadmap"
       ]
     },
     {
@@ -254,12 +251,6 @@
       "group": "Observability",
       "pages": [
         "compute/observability/helicone"
-      ]
-    },
-    {
-      "group": "Voqal Roadmap",
-      "pages": [
-        "roadmap/overview"
       ]
     },
     {
