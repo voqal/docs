@@ -12,7 +12,7 @@ to that request. Voqal leverages this functionality by adding the available [Voq
 your request and any other relevant information. It then sends that off to the language model(s) which pick and choose
 which tool(s) Voqal executes to fulfill your request.
 
-## Templating
+## Context Extensions
 
 [Pebble Templates](https://pebbletemplates.io/) are used to render the context for any given directive.
 For example, the following snippet shows how [Voqal Tools](/tools/overview) are added to the [Voqal Modes](/modes/overview).
@@ -31,7 +31,7 @@ For example, the following snippet shows how [Voqal Tools](/tools/overview) are 
 {% endfor %}
 ````
 
-## Embedded
+### Embedded
 
 There are currently four embedded context extensions:
  - `assistant`
@@ -41,6 +41,6 @@ There are currently four embedded context extensions:
 
 These context extensions are always available and can be used to provide dynamic information to your Voqal Assistant.
 
- ## Third Party
+### Third Party
 
- Not yet supported.
+Not yet supported.
