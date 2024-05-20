@@ -73,6 +73,10 @@
     {
       "name": "Roadmap",
       "url": "roadmap"
+    },
+    {
+      "name": "Troubleshooting",
+      "url": "troubleshooting"
     }
   ],
   "navigation": [
@@ -256,6 +260,12 @@
       "group": "Voqal Roadmap",
       "pages": [
         "roadmap/overview"
+      ]
+    },
+    {
+      "group": "Voqal Troubleshooting",
+      "pages": [
+        "troubleshooting/overview"
       ]
     }
   ],
