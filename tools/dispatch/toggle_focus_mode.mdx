@@ -1,0 +1,24 @@
+---
+title: "Toggle Focus Mode"
+description: "todo"
+icon: diagram-subtask
+---
+
+<Warning>This is currently under development.</Warning>
+
+### toggle_focus_mode
+```yaml
+type: function
+function:
+  name: toggle_focus_mode
+  parameters:
+    type: object
+    properties:
+      prompt:
+        type: string
+        description: The raw transcript of the user's speech
+    required:
+    - prompt
+  description: Pass transcription off to Voqal Focus Mode. Use this tool whenever
+    asked to focus on specific text in the viewing code.
+```

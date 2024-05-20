@@ -1,0 +1,32 @@
+---
+title: "Hide Tool Window"
+description: "Hide the tool window"
+---
+
+<Warning>This is currently under development.</Warning>
+
+### Tool Schema
+
+```yaml
+type: function
+function:
+  name: hide_tool_window
+  parameters:
+    type: object
+    properties:
+      toolWindowType:
+        type: string
+        description: The tool window type to hide
+        enum:
+        - problems
+        - project
+        - endpoints
+        - debug
+        - run
+        - commit
+        - structure
+        - vocal
+    required:
+    - toolWindowType
+  description: Hide the tool window
+```

@@ -1,0 +1,26 @@
+---
+title: "Change Theme"
+description: "Change the theme of the IDE."
+---
+
+<Warning>This is currently under development.</Warning>
+
+### Tool Schema
+
+```yaml
+type: function
+function:
+  name: change_theme
+  parameters:
+    type: object
+    properties:
+      theme:
+        type: string
+        description: The theme to change to.
+        enum:
+        - light
+        - dark
+    required:
+    - theme
+  description: Change the theme of the IDE.
+```

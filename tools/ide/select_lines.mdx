@@ -1,0 +1,27 @@
+---
+title: "Select Lines"
+description: "Select text between the specified lines."
+---
+
+<Warning>This is currently under development.</Warning>
+
+### Tool Schema
+
+```yaml
+type: function
+function:
+  name: select_lines
+  parameters:
+    type: object
+    properties:
+      startLine:
+        type: integer
+        description: The starting line number to select.
+      endLine:
+        type: integer
+        description: The ending line number to select.
+    required:
+    - startLine
+    - endLine
+  description: Select text between the specified lines.
+```

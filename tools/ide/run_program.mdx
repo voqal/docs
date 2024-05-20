@@ -5,7 +5,7 @@ description: ""
 
 <Warning>This is currently under development.</Warning>
 
-### run_program
+### Tool Schema
 
 ```yaml
 type: function
@@ -18,13 +18,12 @@ function:
         type: enum
         description: The file run configuration to run.
         enum:
-        - Main
-        - Main
+        - <generated>
       project_run_configuration:
         type: project_run_configuration
         description: The project run configuration to run.
         enum:
-        - Application__Main
+        - <generated>
       debug_mode:
         type: boolean
         description: Whether or not to run in debug mode, default is false

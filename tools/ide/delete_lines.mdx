@@ -1,0 +1,27 @@
+---
+title: "Delete Lines"
+description: "Delete text between the specified lines."
+---
+
+<Warning>This is currently under development.</Warning>
+
+### Tool Schema
+
+```yaml
+type: function
+function:
+  name: delete_lines
+  parameters:
+    type: object
+    properties:
+      startLine:
+        type: integer
+        description: The starting line number to delete.
+      endLine:
+        type: integer
+        description: The ending line number to delete.
+    required:
+    - startLine
+    - endLine
+  description: Delete text between the specified lines.
+```

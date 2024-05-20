@@ -1,0 +1,37 @@
+---
+title: "Scroll"
+description: "Scroll the editor"
+---
+
+<Warning>This is currently under development.</Warning>
+
+### Tool Schema
+
+```yaml
+type: function
+function:
+  name: scroll
+  parameters:
+    type: object
+    properties:
+      scrollDirection:
+        type: string
+        description: Direction to scroll
+        enum:
+        - UP
+        - DOWN
+        - TOP
+        - BOTTOM
+        - START
+        - END
+      scrollType:
+        type: string
+        description: Type of scroll. 'scroll' moves half page, 'page' moves full page
+        enum:
+        - scroll
+        - page
+        default: scroll
+    required:
+    - scrollDirection
+  description: Scroll the editor
+```

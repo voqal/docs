@@ -1,6 +1,6 @@
 ---
-title: "Delete Line"
-description: "Delete the line at the specified position."
+title: "Select Line"
+description: "Select the line at the specified position."
 ---
 
 <Warning>This is currently under development.</Warning>
@@ -10,14 +10,14 @@ description: "Delete the line at the specified position."
 ```yaml
 type: function
 function:
-  name: delete_line
+  name: select_line
   parameters:
     type: object
     properties:
       line:
         type: integer
-        description: The line number to delete.
+        description: The line number to select.
     required:
     - line
-  description: Delete the line at the specified position.
+  description: Select the line at the specified position.
 ```

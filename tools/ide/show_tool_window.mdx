@@ -1,0 +1,32 @@
+---
+title: "Show Tool Window"
+description: "Show the tool window"
+---
+
+<Warning>This is currently under development.</Warning>
+
+### Tool Schema
+
+```yaml
+type: function
+function:
+  name: show_tool_window
+  parameters:
+    type: object
+    properties:
+      toolWindowType:
+        type: string
+        description: The tool window type to show
+        enum:
+        - problems
+        - project
+        - endpoints
+        - debug
+        - run
+        - commit
+        - structure
+        - vocal
+    required:
+    - toolWindowType
+  description: Show the tool window
+```

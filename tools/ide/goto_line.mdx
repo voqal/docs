@@ -1,6 +1,6 @@
 ---
 title: "Goto Line"
-description: ""
+description: "Go to the specified line number."
 ---
 
 <Warning>This is currently under development.</Warning>
@@ -10,3 +10,20 @@ todo
 ### Example Usage
 
 - `"Go to line two hundred"`
+
+### Tool Schema
+
+```yaml
+type: function
+function:
+  name: goto_line
+  parameters:
+    type: object
+    properties:
+      lineNumber:
+        type: integer
+        description: The line number to go to.
+    required:
+    - lineNumber
+  description: Go to the specified line number.
+```
