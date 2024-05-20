@@ -21,7 +21,18 @@ example of how to customize Voqal for real-time information and private data.
   src="/videos/what-time-is-it.mp4"
 ></video>
 
-### Custom Prompt URL
+### Option 1: Computer Context Provider
+
+The embedded [computer context provider](/context/embedded/computer) has the ability to provide the current time.
+
+To print the current time in a template, use the following code:
+```markdown
+{{ computer.currentTime | date("yyyy-MM-dd'T'HH:mm:ssX") }}
+```
+
+See https://pebbletemplates.io/wiki/filter/date/ for more information on the `date` filter.
+
+### Option 2: Custom Prompt URL
 
 ```kotlin
 fun main() {
@@ -67,13 +78,3 @@ fun main() {
 ```
 ````
 
-## Alternative
-
-The embedded [computer context provider](/context/embedded/computer) has the ability to provide the current time.
-
-To print the current time in a template, use the following code:
-```markdown
-{{ computer.currentTime | date("yyyy-MM-dd'T'HH:mm:ssX") }}
-```
-
-See https://pebbletemplates.io/wiki/filter/date/ for more information on the `date` filter.
