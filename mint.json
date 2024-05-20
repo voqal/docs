@@ -88,8 +88,8 @@
     {
       "group": "Development",
       "pages": [
-        "development/early_access_program",
         "development/changelog",
+        "development/early_access_program",
         "development/roadmap"
       ]
     },
