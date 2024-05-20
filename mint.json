@@ -101,7 +101,7 @@
       ]
     },
     {
-      "group": "Embedded",
+      "group": "Embedded Modes",
       "pages": [
         "modes/embedded/idle",
         "modes/embedded/code",
@@ -123,7 +123,7 @@
       ]
     },
     {
-      "group": "Embedded",
+      "group": "Embedded Extensions",
       "pages": [
         "context/embedded/assistant",
         "context/embedded/developer",
@@ -132,7 +132,7 @@
       ]
     },
     {
-      "group": "Third Party",
+      "group": "Third Party Extensions",
       "pages": [
         "context/third-party/apache_skywalking"
       ]
