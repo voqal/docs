@@ -1,0 +1,33 @@
+---
+title: "Computer"
+icon: computer
+---
+
+<Warning>This is currently under development.</Warning>
+
+## Schema
+
+```yaml
+context:
+  name: computer
+  description: Provides information about the computer.
+  parameters:
+    type: object
+    properties:
+      currentTime:
+        type: date
+        description: The current time.
+```
+
+## Example
+
+```json
+{
+  "context": {
+    "name": "computer",
+    "parameters": {
+      "currentTime": "2020-01-01T00:00:00Z"
+    }
+  }
+}
+```

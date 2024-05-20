@@ -1,6 +1,6 @@
 ---
 title: "IDE"
-icon: computer
+icon: code
 ---
 
 <Warning>This is currently under development.</Warning>
@@ -21,3 +21,17 @@ context:
         type: string
         description: The project file tree.
 ```
+
+## Example
+
+```json
+{
+  "context": {
+    "name": "ide",
+    "description": "Provides information about the IDE.",
+    "parameters": {
+      "projectName": "MyProject",
+      "projectFileTree": "src/\n  - index.js\n  - components/\n    - Button.js\n    - Input.js"
+    }
+  }
+}

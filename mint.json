@@ -127,6 +127,7 @@
       "pages": [
         "context/embedded/assistant",
         "context/embedded/developer",
+        "context/embedded/computer",
         "context/embedded/ide"
       ]
     },
