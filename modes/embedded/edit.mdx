@@ -1,5 +1,5 @@
 ---
-title: "Edit Mode (v2.2)"
+title: "Edit Mode (v2.3)"
 description: "Refactor text via conversational directives"
 icon: message-text
 ---
@@ -24,7 +24,7 @@ natural language instructions to refactor the text. Only focused text will be mo
 
 > CDN: https://voqal.dev/prompts/embedded/voqal-edit-mode.md
 
-<Info>Prompt Name: Voqal Edit Mode<br/>Prompt Version: 2.2</Info>
+<Info>Prompt Name: Voqal Edit Mode<br/>Prompt Version: 2.3</Info>
 
 <Accordion title="Prompt Text">
 
@@ -44,6 +44,7 @@ free to ask." Just repeat the previous code output or a new code output if the d
 If you are unsure what to do, return the original text with no changes.
 If the developer wants to cancel/exit, respond with `{"cancel": true}`.
 If the developer want to accept the changes, respond with `{"accept": true}`.
+If the developer says looks good, respond with `{"accept": true}`.
 
 ## Project Structure
 
@@ -82,7 +83,7 @@ Filename: {{ developer.viewingFile }}
 
 > What the developer is asking you to do to the focused text.
 
-{% if system.usingAudioModality == false %}
+{% if assistant.usingAudioModality == false %}
 
 {{ developer.transcription }}
 

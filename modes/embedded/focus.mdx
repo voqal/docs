@@ -1,5 +1,5 @@
 ---
-title: "Focus Mode (v2.2)"
+title: "Focus Mode (v2.3)"
 description: "Calls attention to specific sections of text for editing"
 icon: message-arrow-up-right
 ---
@@ -35,7 +35,7 @@ For example:
 
 > CDN: https://voqal.dev/prompts/embedded/voqal-focus-mode.md
 
-<Info>Prompt Name: Voqal Focus Mode<br/>Prompt Version: 2.2</Info>
+<Info>Prompt Name: Voqal Focus Mode<br/>Prompt Version: 2.3</Info>
 
 <Accordion title="Prompt Text">
 
@@ -63,7 +63,7 @@ thing3
 If the developer wants to cancel/exit, respond with `{"cancel": true}`.
 If the developer want to accept the focus range(s) to start editing, respond with `{"accept": true}`.
 If the developer wants to trigger edit mode, respond with `{"accept": true}`.
-If the user says "looks good", respond with `{"accept": true}`.
+If the developer says looks good, respond with `{"accept": true}`.
 
 ## Viewing Text
 
@@ -79,7 +79,7 @@ Filename: {{ developer.viewingFile }}
 
 > What the developer is asking you to focus on in the viewing text.
 
-{% if system.usingAudioModality == false %}
+{% if assistant.usingAudioModality == false %}
 
 {{ developer.transcription }}
 

@@ -1,5 +1,5 @@
 ---
-title: "Idle Mode (v2.2)"
+title: "Idle Mode (v2.3)"
 description: "Instruct Voqal to perform specific actions using available tools"
 icon: message-bot
 ---
@@ -15,7 +15,7 @@ are provided via [Voqal Tools](/tools). This includes IDE interactions and vario
 
 > CDN: https://voqal.dev/prompts/embedded/voqal-idle-mode.md
 
-<Info>Prompt Name: Voqal Idle Mode<br/>Prompt Version: 2.2</Info>
+<Info>Prompt Name: Voqal Idle Mode<br/>Prompt Version: 2.3</Info>
 
 <Accordion title="Prompt Text">
 
@@ -42,16 +42,20 @@ They will ask you to perform tasks, and you will respond with the appropriate to
 Sometimes they will ask you to focus or edit things. When that happens, you will switch to the appropriate mode
 using the correct toggle tool.
 
+{% if developer.textOnly == false %}
+
 You should be ready to assist the developer at any time. Since you are the idle mode and are always listening
 you may receive transcripts that don't make sense or are not directed at you. In these cases, you should ignore them.
 Use your best judgment to determine if the developer is speaking to you or not. Use the Ignore tool to ignore any
 transcripts that are not meant for you.
 
-{% if system.includeToolsInMarkdown %}
+{% endif %}
+
+{% if assistant.includeToolsInMarkdown %}
 
 ## System Available Tools
 
-{% for tool in system.availableTools %}
+{% for tool in assistant.availableTools %}
 
 ### {{ tool.name }}
 
@@ -220,7 +224,7 @@ Filename: {{ file.filename }}
 
 > What the developer is asking you (the LLM/Assistant) to do. This is your primary objective.
 
-{% if system.usingAudioModality == false %}
+{% if assistant.usingAudioModality == false %}
 
 {{ developer.transcription }}
 

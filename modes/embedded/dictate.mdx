@@ -1,5 +1,5 @@
 ---
-title: "Dictate Mode (v2.2)"
+title: "Dictate Mode (v2.3)"
 description: "Write down spoken words including punctuation and capitalization"
 icon: message-quote
 ---
@@ -30,7 +30,7 @@ The prompt is designed to process commands that are included in the transcriptio
 
 > CDN: https://voqal.dev/prompts/embedded/voqal-dictate-mode.md
 
-<Info>Prompt Name: Voqal Dictate Mode<br/>Prompt Version: 2.2</Info>
+<Info>Prompt Name: Voqal Dictate Mode<br/>Prompt Version: 2.3</Info>
 
 <Accordion title="Prompt Text">
 
@@ -94,7 +94,7 @@ If the developer wants to cancel/exit, respond with `{"cancel": true}`.
 
 > The transcription to be cleaned and any commands to be processed
 
-{% if system.usingAudioModality == false %}
+{% if assistant.usingAudioModality == false %}
 
 {{ developer.partialTranscription }}
 
