@@ -246,7 +246,13 @@
       ]
     },
     {
-      "group": "Large Language Model",
+      "group": "Multimodal Model",
+      "pages": [
+        "compute/mm/gemini"
+      ]
+    },
+    {
+      "group": "Language Model",
       "pages": [
         "compute/llm/openai",
         "compute/llm/mistralai",
