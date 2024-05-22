@@ -134,6 +134,7 @@
     {
       "group": "Third Party Extensions",
       "pages": [
+        "context/third-party/accuweather",
         "context/third-party/apache_skywalking"
       ]
     },
