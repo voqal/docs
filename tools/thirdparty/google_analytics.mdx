@@ -17,9 +17,10 @@ icon: google
 ### Tool Schema
 
 ```yaml
-type: function
-function:
+type: google_analytics
+google_analytics:
   name: google_analytics
+  description: Query my website's Google Analytics data
   parameters:
     type: object
     properties:
@@ -51,5 +52,4 @@ function:
     - dimensions
     - metrics
     - dateRanges
-  description: Query Google Analytics data.
 ```
