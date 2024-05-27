@@ -104,10 +104,7 @@
       "group": "Embedded Modes",
       "pages": [
         "modes/embedded/idle",
-        "modes/embedded/code",
-        "modes/embedded/dictate",
-        "modes/embedded/edit",
-        "modes/embedded/focus"
+        "modes/embedded/edit"
       ]
     },
     {
