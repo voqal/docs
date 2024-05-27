@@ -157,16 +157,8 @@
         "tools/general/clear_chat",
         "tools/general/ignore",
         "tools/general/looks_good",
-        "tools/general/stop_listening"
-      ]
-    },
-    {
-      "group": "Prompt Dispatch",
-      "pages": [
-        "tools/dispatch/toggle_code_mode",
-        "tools/dispatch/toggle_dictate_mode",
-        "tools/dispatch/toggle_edit_mode",
-        "tools/dispatch/toggle_focus_mode"
+        "tools/general/stop_listening",
+        "tools/dispatch/toggle_edit_mode"
       ]
     },
     {
