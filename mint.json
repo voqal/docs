@@ -158,7 +158,7 @@
         "tools/general/ignore",
         "tools/general/looks_good",
         "tools/general/stop_listening",
-        "tools/dispatch/toggle_edit_mode"
+        "tools/general/toggle_edit_mode"
       ]
     },
     {
