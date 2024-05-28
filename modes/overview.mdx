@@ -21,7 +21,7 @@ has access to different [Voqal Tools](/tools/overview), so it's important to be 
 - Speech-to-text and intent detection run concurrently
     - Results from speech-to-text are sent to intent delay queue
     - Results from intent detection are sent to intent delay queue
-- Intent delay queue waits to allow intent corrections (i.e. "go to line 1" becomes "go to line 1000" as new speech-to-text/intent results come in)
+- Intent delay queue waits to allow corrections (i.e. "go to line 1" becomes "go to line 1000" as new speech-to-text/intent results come in)
 - Intent delay queue sends final intent to the appropriate mode
     - In idle mode, the intent is broken down into a series of ordered tasks
     - In edit mode, the intent is used to update the current text or accept/reject the changes
