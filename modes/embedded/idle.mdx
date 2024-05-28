@@ -11,6 +11,63 @@ icon: message-bot
 The Voqal Idle Mode is used to convert developer transcriptions into specific actions which
 are provided via [Voqal Tools](/tools). This includes IDE interactions and various other programmable tasks.
 
+### Demonstration
+
+<video
+  controls
+  className="w-full aspect-video"
+  src="/videos/open-and-breakpoints.mp4"
+></video>
+
+The directive `open what does this do and add breakpoints to all the return statements` is broken down using an
+initial directive decomposition step which results in the following response:
+```json
+[
+  {
+    "open_file": {
+      "directive": "open examples/kotlin/WhatDoesThisDo.kt"
+    }
+  },
+  {
+    "add_breakpoints": {
+      "directive": "add breakpoints to all the return statements"
+    }
+  }
+]
+```
+
+Each directive is then processed one at a time using appropriate tool:
+````
+## Assistant Tool Request
+
+### open_file
+
+```json
+{
+  "name": "examples/kotlin/WhatDoesThisDo.kt"
+}
+```
+````
+
+````
+## Assistant Tool Request
+
+### add_breakpoints
+
+```json
+{
+  "line_numbers": [
+    "6",
+    "10",
+    "14",
+    "21",
+    "25"
+  ]
+}
+````
+
+This increases the latency of the assistant, but allows for more complex tasks to be completed.
+
 ## Prompt Details
 
 > CDN: https://voqal.dev/prompts/embedded/voqal-idle-mode.md

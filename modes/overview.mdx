@@ -31,63 +31,6 @@ has access to different [Voqal Tools](/tools/overview), so it's important to be 
 The [Voqal Idle Mode](/modes/embedded/idle) is used for a broad range of tasks as are available via [Voqal Tools](/tools/overview).
 This is the default mode your Voqal Assistant will be in when not actively engaged in a specific task.
 
-#### Demonstration
-
-<video
-  controls
-  className="w-full aspect-video"
-  src="/videos/open-and-breakpoints.mp4"
-></video>
-
-The directive `open what does this do and add breakpoints to all the return statements` is broken down using an
-initial directive decomposition step which results in the following response:
-```json
-[
-  {
-    "open_file": {
-      "directive": "open examples/kotlin/WhatDoesThisDo.kt"
-    }
-  },
-  {
-    "add_breakpoints": {
-      "directive": "add breakpoints to all the return statements"
-    }
-  }
-]
-```
-
-Each directive is then processed one at a time using appropriate tool:
-````
-## Assistant Tool Request
-
-### open_file
-
-```json
-{
-  "name": "examples/kotlin/WhatDoesThisDo.kt"
-}
-```
-````
-
-````
-## Assistant Tool Request
-
-### add_breakpoints
-
-```json
-{
-  "line_numbers": [
-    "6",
-    "10",
-    "14",
-    "21",
-    "25"
-  ]
-}
-````
-
-This increases the latency of the assistant, but allows for more complex tasks to be completed.
-
 ### Edit Mode
 
 The [Voqal Edit Mode](/modes/embedded/edit) is used for editing code and other textual content. This mode is designed to
