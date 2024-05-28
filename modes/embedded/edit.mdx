@@ -1,5 +1,5 @@
 ---
-title: "Edit Mode (v2.3)"
+title: "Edit Mode (v2.4)"
 description: "Refactor text via conversational directives"
 icon: message-text
 ---
@@ -24,7 +24,7 @@ natural language instructions to refactor the text. Only focused text will be mo
 
 > CDN: https://voqal.dev/prompts/embedded/voqal-edit-mode.md
 
-<Info>Prompt Name: Voqal Edit Mode<br/>Prompt Version: 2.3</Info>
+<Info>Prompt Name: Voqal Edit Mode<br/>Prompt Version: 2.4</Info>
 
 <Accordion title="Prompt Text">
 
@@ -56,32 +56,19 @@ If the developer says looks good, respond with `{"accept": true}`.
 
 ## Viewing Text
 
-> The full text of the file the developer is looking at.
+> The full text of the file the developer is viewing including the caret position. The caret position is denoted by `↕`. Do not include this character in the final output.
 
 Filename: {{ developer.viewingFile }}
 
 ```{{ developer.viewingCode.language }}
 
-{{ developer.viewingCode.code }}
+{{ developer.viewingCode.codeWithCaret }}
 
 ```
-
-### Focused Text
-
-> The text the developer would like you to refactor. Your answer must contain the same number of code blocks (```).
-
-{% for focusedText in developer.focusedTexts %}
-
-```
-{{ focusedText }}
-
-```
-
-{% endfor %}
 
 ## Developer Transcription
 
-> What the developer is asking you to do to the focused text.
+> What the developer is asking you to do to the viewing text.
 
 {% if assistant.usingAudioModality == false %}
 
