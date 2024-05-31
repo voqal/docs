@@ -203,18 +203,18 @@
       ]
     },
     {
+      "group": "Voice Activity",
+      "pages": [
+        "compute/vad/picovoice",
+        "compute/vad/voqal"
+      ]
+    },
+    {
       "group": "Speech-to-Text",
       "pages": [
         "compute/stt/deepgram",
         "compute/stt/openai",
         "compute/stt/picovoice"
-      ]
-    },
-    {
-      "group": "Voice Detection",
-      "pages": [
-        "compute/vad/picovoice",
-        "compute/vad/voqal"
       ]
     },
     {
