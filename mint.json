@@ -193,7 +193,9 @@
         "tools/ide/show_tab",
         "tools/ide/show_tool_window",
         "tools/ide/start_of_line",
-        "tools/ide/stop_program"
+        "tools/ide/stop_program",
+        "tools/ide/zoom_in_ide",
+        "tools/ide/zoom_out_ide"
       ]
     },
     {
