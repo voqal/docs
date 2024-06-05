@@ -41,10 +41,13 @@ context:
           description: The list of active breakpoints.
       textOnly:
         type: boolean
-        description: Whether the user's voice input is text only.
+        description: Whether the user's input is text only.
       partialTranscription:
-        type: string
-        description: The partial transcription of the user's voice input.
+        type: boolean
+        description: Whether the user's voice input is a partial transcription.
+      chatMessage:
+        type: boolean
+        description: Whether the user's input is a chat message.
 
 definitions:
   File:
