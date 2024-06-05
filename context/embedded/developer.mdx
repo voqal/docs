@@ -48,6 +48,11 @@ context:
       chatMessage:
         type: boolean
         description: Whether the user's input is a chat message.
+      relevantFiles:
+        type: array
+        items:
+        $ref: "#/definitions/File"
+        description: The list of relevant files.
 
 definitions:
   File:
