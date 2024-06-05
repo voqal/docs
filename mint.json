@@ -194,6 +194,7 @@
         "tools/ide/show_tool_window",
         "tools/ide/start_of_line",
         "tools/ide/stop_program",
+        "tools/ide/view_source",
         "tools/ide/zoom_in_ide",
         "tools/ide/zoom_out_ide"
       ]

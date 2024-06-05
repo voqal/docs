@@ -1,0 +1,25 @@
+---
+title: "View Source"
+description: ""
+---
+
+<Warning>This is currently under development.</Warning>
+
+### Tool Schema
+
+```yaml
+type: function
+function:
+  name: view_source
+  parameters:
+    type: object
+    properties:
+      name:
+        type: string
+        description: The name of the file. Be as specific as you can. Do not make
+          up file extensions.
+    required:
+    - name
+  description: Adds the contents of the specified file to the current context to assist
+    LLM in answering questions.
+```
