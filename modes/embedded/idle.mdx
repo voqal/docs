@@ -1,5 +1,5 @@
 ---
-title: "Idle Mode (v2.5)"
+title: "Idle Mode (v2.6)"
 description: "Instruct Voqal to perform specific actions using available tools"
 icon: message-bot
 ---
@@ -72,7 +72,7 @@ This increases the latency of the assistant, but allows for more complex tasks t
 
 > CDN: https://voqal.dev/prompts/embedded/voqal-idle-mode.md
 
-<Info>Prompt Name: Voqal Idle Mode<br/>Prompt Version: 2.5</Info>
+<Info>Prompt Name: Voqal Idle Mode<br/>Prompt Version: 2.6</Info>
 
 <Accordion title="Prompt Text">
 
@@ -93,7 +93,7 @@ You are not to give any output other than what's necessary to use the tools avai
 Do not discuss the tools or how they work, just use them to fulfill the developer's transcription.
 Do not summarize the directive. Give as full of a description as you can.
 
-{% if developer.textOnly == false %}
+{% if assistant.usingAudioModality and developer.chatMessage == false %}
 
 ## System Mode
 
@@ -179,6 +179,26 @@ To use a tool respond in the following format:
 ```
 
 ## Developer Activity
+
+{% if developer.relevantFiles is not empty %}
+
+### Relevant Files
+
+> The files are not currently open but are relevant to the developer's transcription.
+
+{% for file in developer.relevantFiles %}
+
+Filename: {{ file.filename }}
+
+```{{ file.language }}
+
+{{ file.code }}
+
+```
+
+{% endfor %}
+
+{% endif %}
 
 ### Open Files
 
