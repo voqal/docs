@@ -122,8 +122,6 @@ transcripts that are not meant for you.
 
 {% endfor %}
 
-{% endif %}
-
 ## System Tool Usage
 
 > How you (the LLM/Assistant) can request the use of tools.
@@ -160,6 +158,8 @@ To use a tool respond in the following format:
 
 - Where \<ToolName\> = one of the available tools above
 - Where \<ToolParameters\> = the corresponding JSON parameters necessary to invoke that tool
+
+{% endif %}
 
 {% endif %}
 
