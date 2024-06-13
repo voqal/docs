@@ -1,5 +1,5 @@
 ---
-title: "Idle Mode (v2.6)"
+title: "Idle Mode (v2.7)"
 description: "Instruct Voqal to perform specific actions using available tools"
 icon: message-bot
 ---
@@ -72,7 +72,7 @@ This increases the latency of the assistant, but allows for more complex tasks t
 
 > CDN: https://voqal.dev/prompts/embedded/voqal-idle-mode.md
 
-<Info>Prompt Name: Voqal Idle Mode<br/>Prompt Version: 2.6</Info>
+<Info>Prompt Name: Voqal Idle Mode<br/>Prompt Version: 2.7</Info>
 
 <Accordion title="Prompt Text">
 
@@ -169,6 +169,8 @@ To use a tool respond in the following format:
 > The data in this section is generated based on the developer's current activity. You are to use this as context to
 > fulfill the requests in the developer's transcription
 
+{% if ide.projectFileTree != null %}
+
 ## Project Structure
 
 > The file structure of the current project.
@@ -176,6 +178,8 @@ To use a tool respond in the following format:
 ```
 {{ ide.projectFileTree }}
 ```
+
+{% endif %}
 
 ## Developer Activity
 

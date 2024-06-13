@@ -1,5 +1,5 @@
 ---
-title: "Edit Mode (v2.6)"
+title: "Edit Mode (v2.7)"
 description: "Refactor text via natural progressive conversations"
 icon: message-text
 ---
@@ -30,7 +30,7 @@ To revert any changes, say `cancel`.
 
 > CDN: https://voqal.dev/prompts/embedded/voqal-edit-mode.md
 
-<Info>Prompt Name: Voqal Edit Mode<br/>Prompt Version: 2.6</Info>
+<Info>Prompt Name: Voqal Edit Mode<br/>Prompt Version: 2.7</Info>
 
 <Accordion title="Prompt Text">
 
@@ -114,7 +114,11 @@ Filename: {{ developer.viewingFile }}
 
 ```
 
+{% if developer.viewingCode.caretLine != null and developer.viewingCode.caretColumn != null %}
+
 Note: Caret is denoted by `↕`. Developers may use this to indicate where the change should occur. Do not include caret in the final output.
+
+{% endif %}
 
 {% endif %}
 
