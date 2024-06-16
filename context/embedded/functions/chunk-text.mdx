@@ -1,0 +1,27 @@
+---
+title: "Chunk Text"
+icon: input-text
+---
+
+<Warning>This is currently under development.</Warning>
+
+The `chunkText()` function is used to chunk large text into smaller, more manageable pieces. This functionality
+is useful when working with large text or source code files, allowing you to edit smaller sections of the file
+at a time. This function will attempt to chunk code via natural breaks (e.g., functions, code blocks, etc) for
+up to 20% of the specified limit.
+
+## Parameters
+
+- `viewingCode` (required): The code or text to be chunked
+- `limit` (optional): The maximum number of lines or other units to include in the chunk. Starts from currently visible lines in the editor. Appends/remove text equally from the top and bottom of the chunk.
+  - Default: Currently visible lines in editor
+- `limitType` (optional): The type of limit, currently supporting "LINES"
+  - Default: "LINES"
+
+## Configuration
+
+To configure the `chunkText()` function, provide the necessary parameters in your template or code. For example:
+
+```markdown
+{{ chunkText(developer.viewingCode, 400, "LINES").codeWithCaret }}
+```

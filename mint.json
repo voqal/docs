@@ -120,12 +120,18 @@
       ]
     },
     {
-      "group": "Embedded Extensions",
+      "group": "Embedded Variables",
       "pages": [
-        "context/embedded/assistant",
-        "context/embedded/developer",
-        "context/embedded/computer",
-        "context/embedded/ide"
+        "context/embedded/variables/assistant",
+        "context/embedded/variables/developer",
+        "context/embedded/variables/computer",
+        "context/embedded/variables/ide"
+      ]
+    },
+    {
+      "group": "Embedded Functions",
+      "pages": [
+        "context/embedded/functions/chunk-text"
       ]
     },
     {
