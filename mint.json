@@ -245,6 +245,7 @@
       "pages": [
         "compute/llm/openai",
         "compute/llm/mistralai",
+        "compute/llm/deepseek",
         "compute/llm/huggingface",
         "compute/llm/togetherai",
         "compute/llm/ollama",
