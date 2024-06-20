@@ -8,7 +8,8 @@ icon: input-text
 The `chunkText()` function is used to chunk large text into smaller, more manageable pieces. This functionality
 is useful when editing large text or source code files (i.e. 1k+ lines of code).
 This function will attempt to chunk code via natural breaks (e.g., functions, code blocks, etc) as long
-as the chunk limit is not exceeded.
+as the chunk limit is not exceeded. The minimum code that can be chunked is the currently visible lines in the editor
+regardless of the presence of natural breaks.
 
 ## Parameters
 
