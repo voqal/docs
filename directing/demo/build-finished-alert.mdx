@@ -35,7 +35,21 @@ function:
   name: alert_me
   description: Use this tool whenever the developer asks you to alert them.
   exec:
-    command: Add-Type -AssemblyName presentationCore; $mediaPlayer = New-Object system.windows.media.mediaplayer; $mediaPlayer.open('$[[project_home]]\.voqal\notifications\alert.mp3'); $mediaPlayer.Play();
+    command: |
+      Add-Type -TypeDefinition @"
+      using System.Media;
+      public class AudioAlert
+      {
+          public static void Play(string path)
+          {
+              using (SoundPlayer player = new SoundPlayer(path))
+              {
+                  player.PlaySync();
+              }
+          }
+      }
+      "@
+      [AudioAlert]::Play("$[[project_home]]\.voqal\notifications\alert.wav")
     type: powershell
 ```
 
@@ -66,7 +80,16 @@ function:
   name: wait_for_github_builds
   description: Use this tool whenever the developer asks you to wait for github builds to finish.
   exec:
-    command: Set-Location $[[project_home]]; Start-Sleep -Seconds 10; while ($true) { if (-not (gh run list --status=in_progress --json status | ConvertFrom-Json | Where-Object { $_.status -eq "in_progress" })) { break } Start-Sleep -Seconds 1 }
+    command: |
+      Set-Location $[[project_home]]
+      Start-Sleep -Seconds 10
+      while ($true) {
+        $builds = gh run list --status=in_progress --json status
+        if (-not ($builds | ConvertFrom-Json | Where-Object { $_.status -eq "in_progress" })) {
+          break
+        }
+        Start-Sleep -Seconds 1
+      }
     type: powershell
 ```
 ````
