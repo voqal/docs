@@ -116,7 +116,8 @@
     {
       "group": "Voqal Context",
       "pages": [
-        "context/overview"
+        "context/overview",
+        "context/examples"
       ]
     },
     {
