@@ -21,9 +21,6 @@ icon: thought-bubble
 
 {% if getUserContext("sslcheck").isvalidCertificate %}
 - Website: {{ getUserContext("sslcheck").certDetails.subject.CN }}
-
-- Valid: {{ getUserContext("sslcheck").isvalidCertificate }}
-
 - Expires: {{ getUserContext("sslcheck").expiry }} ({{ getUserContext("sslcheck").daysLeft }} days left)
 {% endif %}
 ```
