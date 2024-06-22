@@ -131,13 +131,10 @@
     {
       "group": "Embedded Functions",
       "pages": [
-        "context/embedded/functions/chunk-text"
-      ]
-    },
-    {
-      "group": "Third Party Extensions",
-      "pages": [
-        "context/third-party/apache_skywalking"
+        "context/embedded/functions/add-user-context",
+        "context/embedded/functions/chunk-text",
+        "context/embedded/functions/get-user-context",
+        "context/embedded/functions/slurp-url"
       ]
     },
     {

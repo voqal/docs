@@ -1,0 +1,21 @@
+---
+title: "Add User Context"
+icon: rectangle-history-circle-plus
+---
+
+<Warning>This is currently under development.</Warning>
+
+The `addUserContext()` function is used to add custom data to the current prompt.
+
+## Parameters
+
+- `key` (required): The key of the custom data to be added
+- `value` (required): The value of the custom data to be added
+
+## Configuration
+
+To use the `addUserContext()` function, provide the necessary parameters in your prompt. For example:
+
+```markdown
+{{ addUserContext("name", "John Doe") }}
+```

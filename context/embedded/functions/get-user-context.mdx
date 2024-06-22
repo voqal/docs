@@ -1,0 +1,20 @@
+---
+title: "Get User Context"
+icon: rectangle-history
+---
+
+<Warning>This is currently under development.</Warning>
+
+The `getUserContext()` function is used to retrieve custom data from the current prompt.
+
+## Parameters
+
+- `key` (required): The key of the custom data to be retrieved
+
+## Configuration
+
+To use the `getUserContext()` function, provide the necessary parameters in your prompt. For example:
+
+```markdown
+{{ getUserContext("name") }}
+```

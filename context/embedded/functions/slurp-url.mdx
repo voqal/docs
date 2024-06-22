@@ -1,0 +1,22 @@
+---
+title: "Slurp URL"
+icon: globe
+---
+
+<Warning>This is currently under development.</Warning>
+
+The `slurpUrl()` function is used to fetch the contents of a URL and return it as a string.
+
+## Parameters
+
+- `url` (required): The URL to fetch
+- `cacheTime` (required): The time to cache content (1s/1m/etc)
+- `headers` (optional): The headers to send with the request
+
+## Configuration
+
+To use the `slurpUrl()` function, provide the necessary parameters in your prompt. For example:
+
+```markdown
+{{ slurpUrl("https://example.com", "1m", "header1:value1,header2:value2") }}
+```
