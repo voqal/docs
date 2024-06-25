@@ -221,6 +221,7 @@
       "pages": [
         "compute/stt/deepgram",
         "compute/stt/openai",
+        "compute/stt/assemblyai",
         "compute/stt/picovoice"
       ]
     },
