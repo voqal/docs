@@ -220,6 +220,7 @@
       "group": "Speech-to-Text",
       "pages": [
         "compute/stt/deepgram",
+        "compute/stt/groq",
         "compute/stt/openai",
         "compute/stt/assemblyai",
         "compute/stt/picovoice"
@@ -249,7 +250,8 @@
         "compute/llm/huggingface",
         "compute/llm/togetherai",
         "compute/llm/ollama",
-        "compute/llm/groq"
+        "compute/llm/groq",
+        "compute/llm/fireworks"
       ]
     },
     {
