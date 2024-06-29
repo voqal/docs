@@ -7,16 +7,21 @@ icon: message-text
 ## Introduction
 
 The Voqal Edit Mode allows developers to refactor text via progressive conversations. To enter edit mode, you can
-say `edit mode` explicitly or just simply ask for what you would like edited directly. Voqal will pick up on your
-desire to edit and automatically transfer your transcription to the edit mode. Once in edit mode, you can make
-as many changes as you like. Once you are satisfied, say `looks good` to exit edit mode.
-To revert any changes, say `cancel`.
+say `edit mode` explicitly or simply ask for what you want edited directly. Voqal will pick up on your
+desire to edit and automatically transfer your transcription to the edit mode. Alternatively, you can press `ALT+C`
+to toggle edit mode on and off.
 
-### Default Keymap
+In edit mode, you can make as many changes as you like. Once you are satisfied, say `looks good` to exit edit mode,
+accepting all changes or say `cancel` to revert all changes.
 
-`ALT+C`
+### Chunking
 
-### Demonstration
+By default, the edit mode uses the [chunkText()](/context/embedded/functions/chunk-text) function
+with a value of `200` lines. The source code which is chunked is determined by the currently visible code. This will
+have no effect on files under 200 lines. To edit files over 200 files, you should first ensure the code you wish to
+edit is visible before requesting changes.
+
+## Demonstration
 
 <video
   controls
