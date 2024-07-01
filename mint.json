@@ -167,12 +167,6 @@
       ]
     },
     {
-      "group": "Third Party",
-      "pages": [
-        "tools/thirdparty/google_analytics"
-      ]
-    },
-    {
       "group": "IDE Control",
       "pages": [
         "tools/ide/add_breakpoint",
